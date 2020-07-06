@@ -1,5 +1,4 @@
 import Link from 'next/link'
-
 import styled from '@emotion/styled'
 
 const StyledHeader = styled.header`
@@ -11,6 +10,7 @@ const StyledHeader = styled.header`
   align-items: center;
   width: 100%;
   max-width: 1300px;
+  background: coral;
 
   @media (min-width: 950px) {
     flex-direction: row;

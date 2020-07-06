@@ -1,22 +1,21 @@
-import Head from 'next/head'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+// import { Global, css } from '@emotion/core'
+// import { ThemeProvider, CSSReset } from '@chakra-ui/core'
 
-export default function Home() {
+// working on global styles first
+import GlobalStyle from '../global-styles'
+
+import App from './_app'
+
+const Home = () => {
   return (
     <>
-      <Head>
-        <title>Create Next App</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-
-      <Header />
-
-      <main>
-        <h1 className='title'>Welcome Page</h1>
-      </main>
-
-      <Footer />
+      {/* <ThemeProvider> */}
+      {/* <GlobalStyle> */}
+      <App />
+      {/* </GlobalStyle> */}
+      {/* </ThemeProvider> */}
     </>
   )
 }
+
+export default Home
