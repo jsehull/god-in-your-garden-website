@@ -1,16 +1,19 @@
-import React from 'react'
-import { Box } from '@chakra-ui/core'
+import styled from '@emotion/styled'
 
-function Footer() {
+const StyledFooter = styled.footer`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background: lavender;
+  text-align: center;
+`
+
+const Footer = () => {
   return (
-    <Box bg='lavender'>
-      <p>Footer</p>
-      <div>
-        <a href='#'>Email</a>
-        <a href='#'>Link1</a>
-        <a href='#'>Link2</a>
-      </div>
-    </Box>
+    <StyledFooter>
+      <a href='#'>email@example.com</a>
+    </StyledFooter>
   )
 }
 

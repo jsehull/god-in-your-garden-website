@@ -9,7 +9,7 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1280px;
   background: coral;
 
   @media (min-width: 950px) {

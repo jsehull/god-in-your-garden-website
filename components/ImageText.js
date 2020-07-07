@@ -14,17 +14,22 @@ const Flex = styled.div`
 
 const ImageBox = styled.div`
   margin: 10px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: coral;
 `
 
 const TextBox = styled.div`
   margin: 10px;
+  flex: 1;
   color: red;
-  background: lavender;
+  text-align: left;
   order: ${props => (props.order ? -1 : 1)};
 `
 
-const ImageText = ({ id, title, src, alt, p, order }) => {
+const ImageText = ({ id, title, src, alt, p1, p2, order }) => {
   return (
     <Section id={id}>
       <h2>{title}</h2>
@@ -33,7 +38,8 @@ const ImageText = ({ id, title, src, alt, p, order }) => {
           <img src={src} alt={alt} />
         </ImageBox>
         <TextBox order={order}>
-          <p>{p}</p>
+          <p>{p1}</p>
+          <p>{p2}</p>
         </TextBox>
       </Flex>
     </Section>
