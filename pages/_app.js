@@ -1,24 +1,16 @@
-import Head from 'next/head'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+// import { ThemeProvider, CSSReset } from '@chakra-ui/core'
+// import GlobalStyle from '../global-styles'
 
-const App = () => {
+const MyApp = ({ Component, pageProps }) => {
   return (
     <>
-      <Head>
-        <title>Create Next App</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-
-      <Header />
-
-      <main>
-        <h1 className='title'>Welcome Page</h1>
-      </main>
-
-      <Footer />
+      {/* <ThemeProvider> */}
+      {/* <GlobalStyle> */}
+      <Component {...pageProps} />
+      {/* </GlobalStyle> */}
+      {/* </ThemeProvider> */}
     </>
   )
 }
 
-export default App
+export default MyApp

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styled from '@emotion/styled'
 
 const StyledHeader = styled.header`
-  margin: 10px 0;
+  margin: 10px auto;
   padding: 5px;
   display: flex;
   flex-direction: column;
@@ -51,6 +51,18 @@ const Header = () => (
     </Link>
     <NavBar>
       <Li>
+        <A href='#book'>Book</A>
+      </Li>
+      <Li>
+        <A href='#author'>Author</A>
+      </Li>
+      <Li>
+        <A href='#reviews'>Reviews</A>
+      </Li>
+      <Li>
+        <A href='#'>Contact??</A>
+      </Li>
+      {/* <Li>
         <Link href='/about'>
           <A>About</A>
         </Link>
@@ -69,9 +81,12 @@ const Header = () => (
         <Link href='/contact'>
           <A>Contact</A>
         </Link>
-      </Li>
+      </Li> */}
     </NavBar>
   </StyledHeader>
 )
 
 export default Header
+
+{
+}
