@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import Book from '../components/Book'
+import ImageText from '../components/ImageText'
 import Order from '../components/Order'
-import Author from '../components/Author'
 import Reviews from '../components/Reviews'
 import Footer from '../components/Footer'
 
@@ -11,19 +10,31 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>God in Your Garden by Scott Hull</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
       <Header />
       <Hero
         title='God in your Garden'
         descrip='He Wants to Do Life with You'
         author='by Scott Hull'
       />
-      <Book />
+      <ImageText
+        id='book'
+        title='About the Book'
+        src='https://via.placeholder.com/200x300'
+        alt='God in Your Garden'
+        p=' God in your Garden reveals the opportunity of a lifetime: God is eagerly waiting to live your life together with you—right where you are! You can know and experience God in the unique setting where you live, in a way few ever imagined possible. Exploring various scenes from the original “Garden of Eden” story, this book brings to life your individual living-space God designed for you and where He chooses to do life together with you.'
+      />
       <Order />
-      <Author />
+      <ImageText
+        id='author'
+        title='About the Author'
+        src='https://via.placeholder.com/300x200'
+        alt='Scott Hull'
+        p='Scott and Susan Hull have been walking with God in Christian ministry for nearly four decades. They desire for people to recognize God’s voice for themselves and to experience their own unique relationship with Him. Their heart has been to see God’s sons and daughters raised (not duplicated), blessed (not used), and released (not enlisted). As a pastor, brother, and friend, Scott has served in Texas, Pennsylvania, California, Wisconsin, and Connecticut. Scott and Susan currently reside in North Carolina and they have 3 married children with 7 (so far) grandchildren.'
+        order
+      />
       <Reviews />
       <Footer />
     </>

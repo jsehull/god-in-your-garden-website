@@ -9,7 +9,7 @@ const Hero = ({ title, descrip, author }) => {
       <p>{descrip}</p>
       <p>{author}</p>
       <div>
-        <Button text='Get book' link='#book' />
+        <Button text='Get book' link='#order' />
       </div>
     </Section>
   )
