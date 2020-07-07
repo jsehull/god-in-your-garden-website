@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Book from '../components/Book'
+import Order from '../components/Order'
 import Author from '../components/Author'
 import Reviews from '../components/Reviews'
 import Footer from '../components/Footer'
@@ -21,6 +22,7 @@ const index = () => {
         author='by Scott Hull'
       />
       <Book />
+      <Order />
       <Author />
       <Reviews />
       <Footer />

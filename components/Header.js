@@ -54,6 +54,9 @@ const Header = () => (
         <A href='#book'>Book</A>
       </Li>
       <Li>
+        <A href='#order'>Order</A>
+      </Li>
+      <Li>
         <A href='#author'>Author</A>
       </Li>
       <Li>
@@ -87,6 +90,3 @@ const Header = () => (
 )
 
 export default Header
-
-{
-}

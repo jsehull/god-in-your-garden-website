@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from '@chakra-ui/core'
 
-function Footer () {
+function Footer() {
   return (
     <Box bg='lavender'>
       <p>Footer</p>
