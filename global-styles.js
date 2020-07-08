@@ -22,8 +22,10 @@ const globalStyles = css`
     list-style: none;
   }
 
-  h1 {
-    color: red;
+  h1,
+  h2,
+  h3 {
+    text-align: center;
   }
 `
 

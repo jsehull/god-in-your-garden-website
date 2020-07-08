@@ -23,7 +23,7 @@ const ImageBox = styled.div`
 `
 
 const Image = styled.img`
-  width: 200px;
+  width: ${props => props.width};
 `
 
 const TextBox = styled.div`
@@ -37,13 +37,13 @@ const TextBox = styled.div`
   }
 `
 
-const ImageAndText = ({ id, bg, title, src, alt, p1, p2, reverse }) => {
+const ImageAndText = ({ id, bg, title, src, width, alt, p1, p2, reverse }) => {
   return (
     <Section id={id} bg={bg}>
       <h2>{title}</h2>
       <Flex>
-        <ImageBox>
-          <Image src={src} alt={alt} />
+        <ImageBox width={width}>
+          <Image src={src} width={width} alt={alt} />
         </ImageBox>
         <TextBox reverse={reverse}>
           <p>{p1}</p>

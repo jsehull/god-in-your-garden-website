@@ -1,9 +1,10 @@
 import Section from '../components/Section'
 import styled from '@emotion/styled'
+import theme from '../theme'
 
 const Disclaimer = styled.p`
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
   font-size: 0.8em;
   font-style: italic;
   text-align: center;
@@ -27,20 +28,22 @@ const LogoBox = styled.div`
   align-items: center;
   height: 60px;
   background: #fff;
+  border-radius: 5px;
 `
 
 const Logo = styled.img`
   width: 100%;
+  border-radius: 5px;
 `
 const Order = () => {
   return (
-    <Section id='order' bg='skyblue'>
+    <Section id='order' bg={theme.colors.blueSky}>
       <h2>Order now</h2>
       <Disclaimer>
         Purchases directly from BookBaby help support independent authors like
         Scott.
       </Disclaimer>
-      <h3>Paperback Edition</h3>
+      <h3>Paperback</h3>
       <Flex>
         {iconData
           .filter(icon => icon.paperback === true)

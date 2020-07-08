@@ -1,5 +1,6 @@
 import Section from './Section'
 import styled from '@emotion/styled'
+import theme from '../theme'
 
 const Flex = styled.div`
   display: flex;
@@ -12,6 +13,7 @@ const ReviewCard = styled.div`
   margin: 10px 20px;
   width: 300px;
   background: coral;
+  text-align: center;
 `
 
 const Photo = styled.img`
@@ -20,16 +22,20 @@ const Photo = styled.img`
 
 const Quote = styled.p`
   color: blue;
+  text-align: left;
 `
 
 const Name = styled.p`
+  margin: 0 0 15px;
   color: blue;
   font-style: italic;
+  text-align: right;
 `
 
 const Reviews = () => {
+  console.log(theme)
   return (
-    <Section id='reviews' bg='skyblue'>
+    <Section id='reviews' bg={theme.colors.blueSky}>
       <h2>What people are saying</h2>
       <Flex>
         {reviewData.map(review => (

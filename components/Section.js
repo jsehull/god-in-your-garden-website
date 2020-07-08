@@ -3,7 +3,6 @@ import styled from '@emotion/styled'
 const StyledSection = styled.section`
   width: 100%;
   background: ${props => props.bg};
-  text-align: center;
 `
 
 const Container = styled.div`

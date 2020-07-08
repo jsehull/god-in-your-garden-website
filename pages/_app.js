@@ -1,14 +1,10 @@
-// import { ThemeProvider, CSSReset } from '@chakra-ui/core'
-// import GlobalStyle from '../global-styles'
+import GlobalStyle from '../global-styles'
 
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
-      {/* <ThemeProvider> */}
-      {/* <GlobalStyle> */}
+      <GlobalStyle />
       <Component {...pageProps} />
-      {/* </GlobalStyle> */}
-      {/* </ThemeProvider> */}
     </>
   )
 }
