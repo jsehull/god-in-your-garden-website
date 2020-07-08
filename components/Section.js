@@ -8,7 +8,7 @@ const StyledSection = styled.section`
 
 const Container = styled.div`
   margin: 0 auto;
-  width: 1280px;
+  max-width: 1280px;
 `
 
 const Section = ({ id, bg, children }) => {
