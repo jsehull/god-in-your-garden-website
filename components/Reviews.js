@@ -56,10 +56,10 @@ const reviewData = [
   },
   {
     id: 2,
-    name: 'Amazon',
+    name: 'Karen',
     img: 'https://via.placeholder.com/200x300',
     quote:
-      '(240 chars)As a pastor, brother, and friend, Scott has served in Texas, Pennsylvania, California, Wisconsin, and Connecticut. Scott and Susan currently reside in North Carolina and they have 3 married children with 7 (so far) grandchildren.'
+      "(400 chars)It's here! I'm so excited to share this! The idea of God in my Garden has been life changing for me and it's finally in a book that I can share. Pastor Scott has been my mentor for many years now. I'm so thankful for the things he has helped me walk through. I'm blown away by the insight he has and his heart for helping others have a relationship with God that is personal and alive. Check it out!"
   },
   {
     id: 3,
