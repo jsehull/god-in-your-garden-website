@@ -26,7 +26,7 @@ const Logo = styled.img`
 `
 const Order = () => {
   return (
-    <Section id='order'>
+    <Section id='order' bg='skyblue'>
       <h2>Order now</h2>
       <Disclaimer>
         Purchases directly from BookBaby help support independent authors like

@@ -29,7 +29,7 @@ const Name = styled.p`
 
 const Reviews = () => {
   return (
-    <Section id='reviews'>
+    <Section id='reviews' bg='skyblue'>
       <h2>What people are saying</h2>
       <Flex>
         {reviewData.map(review => (

@@ -1,14 +1,22 @@
 import styled from '@emotion/styled'
 
 const StyledSection = styled.section`
-  margin: 0 auto;
-  max-width: 1280px;
-  background: yellow;
+  width: 100%;
+  background: ${props => props.bg};
   text-align: center;
 `
 
-const Section = ({ children, id }) => {
-  return <StyledSection id={id}>{children}</StyledSection>
+const Container = styled.div`
+  margin: 0 auto;
+  width: 1280px;
+`
+
+const Section = ({ id, bg, children }) => {
+  return (
+    <StyledSection id={id} bg={bg}>
+      <Container>{children}</Container>
+    </StyledSection>
+  )
 }
 
 export default Section

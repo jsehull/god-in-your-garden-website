@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import ImageText from '../components/ImageText'
+import ImageAndText from '../components/ImageAndText'
 import Order from '../components/Order'
 import Reviews from '../components/Reviews'
 import Footer from '../components/Footer'
@@ -19,8 +19,9 @@ const index = () => {
         descrip='He Wants to Do Life with You'
         author='by Scott Hull'
       />
-      <ImageText
+      <ImageAndText
         id='book'
+        bg='forestgreen'
         title='About the book'
         src='https://via.placeholder.com/200x300'
         alt='God in Your Garden'
@@ -28,14 +29,15 @@ const index = () => {
         p2=' Exploring various scenes from the original “Garden of Eden” story, this book brings to life your individual living-space God designed for you and where He chooses to do life together with you.'
       />
       <Order />
-      <ImageText
+      <ImageAndText
+        reverse
         id='author'
+        bg='forestgreen'
         title='About the author'
         src='https://via.placeholder.com/300x200'
         alt='Scott Hull'
         p1='Scott and Susan Hull have been walking with God in Christian ministry for nearly four decades. They desire for people to recognize God’s voice for themselves and to experience their own unique relationship with Him. Their heart has been to see God’s sons and daughters raised (not duplicated), blessed (not used), and released (not enlisted).'
         p2='As a pastor, brother, and friend, Scott has served in Texas, Pennsylvania, California, Wisconsin, and Connecticut. Scott and Susan currently reside in North Carolina and they have 3 married children with 7 (so far) grandchildren.'
-        order
       />
       <Reviews />
       <Footer />

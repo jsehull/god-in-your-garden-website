@@ -26,18 +26,21 @@ const TextBox = styled.div`
   flex: 1;
   color: red;
   text-align: left;
-  order: ${props => (props.order ? -1 : 1)};
+
+  @media (min-width: 950px) {
+    order: ${props => (props.reverse ? -1 : 1)};
+  }
 `
 
-const ImageText = ({ id, title, src, alt, p1, p2, order }) => {
+const ImageAndText = ({ id, bg, title, src, alt, p1, p2, reverse }) => {
   return (
-    <Section id={id}>
+    <Section id={id} bg={bg}>
       <h2>{title}</h2>
       <Flex>
         <ImageBox>
           <img src={src} alt={alt} />
         </ImageBox>
-        <TextBox order={order}>
+        <TextBox reverse={reverse}>
           <p>{p1}</p>
           <p>{p2}</p>
         </TextBox>
@@ -46,4 +49,4 @@ const ImageText = ({ id, title, src, alt, p1, p2, order }) => {
   )
 }
 
-export default ImageText
+export default ImageAndText

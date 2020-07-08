@@ -5,7 +5,7 @@ const StyledFooter = styled.footer`
   justify-content: center;
   align-items: center;
   height: 300px;
-  background: lavender;
+  background: skyblue;
   text-align: center;
 `
 
