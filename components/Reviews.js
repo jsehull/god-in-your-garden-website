@@ -33,7 +33,6 @@ const Name = styled.p`
 `
 
 const Reviews = () => {
-  console.log(theme)
   return (
     <Section id='reviews' bg={theme.colors.blueSky}>
       <h2>What people are saying</h2>

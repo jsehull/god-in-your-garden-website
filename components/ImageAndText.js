@@ -3,10 +3,12 @@ import Who from '../components/Who'
 import styled from '@emotion/styled'
 
 const Flex = styled.div`
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1000px;
 
   @media (min-width: 950px) {
     flex-direction: row;
@@ -27,7 +29,7 @@ const Image = styled.img`
 `
 
 const TextBox = styled.div`
-  margin: 10px;
+  margin: 10px 2em;
   flex: 1;
   color: red;
   text-align: left;

@@ -10,15 +10,11 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>God in Your Garden by Scott Hull</title>
+        <title>God in your Garden by Scott Hull</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
-      <Hero
-        title='God in your Garden'
-        descrip='He Wants to Do Life with You'
-        author='by Scott Hull'
-      />
+      <Hero />
       <ImageAndText
         id='book'
         bg='forestgreen'

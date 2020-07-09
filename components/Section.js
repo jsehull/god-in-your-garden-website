@@ -7,7 +7,12 @@ const StyledSection = styled.section`
 
 const Container = styled.div`
   margin: 0 auto;
+  padding: 30px 15px;
   max-width: 1280px;
+
+  @media (min-width: 950px) {
+    padding: 50px;
+  }
 `
 
 const Section = ({ id, bg, children }) => {

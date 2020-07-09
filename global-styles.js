@@ -1,4 +1,5 @@
 import { Global, css } from '@emotion/core'
+import theme from './theme'
 
 const globalStyles = css`
   * {
@@ -7,7 +8,12 @@ const globalStyles = css`
 
   body {
     margin: 0;
-    background: lightgreen;
+    background: ${theme.colors.blueSky};
+    background: linear-gradient(
+      0deg,
+      ${theme.colors.grassGreen} 2%,
+      ${theme.colors.yellow} 2%
+    );
     -webkit-font-smoothing: antialiased;
   }
 
@@ -26,6 +32,15 @@ const globalStyles = css`
   h2,
   h3 {
     text-align: center;
+  }
+
+  h1,
+  h2 {
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 2em;
   }
 `
 

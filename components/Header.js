@@ -63,7 +63,7 @@ const Header = () => (
         <A href='#reviews'>Reviews</A>
       </Li>
       <Li>
-        <A href='#'>Contact??</A>
+        <A href='#'>Contact</A>
       </Li>
       {/* <Li>
         <Link href='/about'>

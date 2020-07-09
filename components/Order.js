@@ -3,11 +3,15 @@ import styled from '@emotion/styled'
 import theme from '../theme'
 
 const Disclaimer = styled.p`
-  margin: 0 auto;
-  width: 70%;
+  margin: 0 auto 20px;
+  width: 75%;
   font-size: 0.8em;
   font-style: italic;
   text-align: center;
+`
+
+const Type = styled.h3`
+  margin-bottom: 5px;
 `
 
 const Flex = styled.div`
@@ -35,6 +39,7 @@ const Logo = styled.img`
   width: 100%;
   border-radius: 5px;
 `
+
 const Order = () => {
   return (
     <Section id='order' bg={theme.colors.blueSky}>
@@ -43,7 +48,7 @@ const Order = () => {
         Purchases directly from BookBaby help support independent authors like
         Scott.
       </Disclaimer>
-      <h3>Paperback</h3>
+      <Type>Paperback</Type>
       <Flex>
         {iconData
           .filter(icon => icon.paperback === true)
@@ -55,7 +60,7 @@ const Order = () => {
             </A>
           ))}
       </Flex>
-      <h3>Digital Editions</h3>
+      <Type>Digital Editions</Type>
       <Flex>
         {iconData.map(icon => (
           <A key={icon.id} href={icon.url}>
