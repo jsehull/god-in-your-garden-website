@@ -2,6 +2,14 @@ import Section from './Section'
 import styled from '@emotion/styled'
 import theme from '../theme'
 
+const Top = styled.div`
+  text-align: center;
+`
+
+const Chair = styled.img`
+  margin-bottom: 26px;
+  width: 200px;
+`
 const Flex = styled.div`
   display: flex;
   flex-flow: row wrap;
@@ -10,9 +18,15 @@ const Flex = styled.div`
 `
 
 const ReviewCard = styled.div`
-  margin: 10px 20px;
+  margin: 10px;
+  padding: 20px;
   width: 300px;
-  background: coral;
+  background: ${theme.colors.blueSky};
+  background: linear-gradient(
+    0deg,
+    ${theme.colors.blueSky} 20%,
+    ${theme.colors.orangeLight} 90%
+  );
   text-align: center;
 `
 
@@ -21,13 +35,11 @@ const Photo = styled.img`
 `
 
 const Quote = styled.p`
-  color: blue;
   text-align: left;
 `
 
 const Name = styled.p`
-  margin: 0 0 15px;
-  color: blue;
+  margin: 0 50px 15px 0;
   font-style: italic;
   text-align: right;
 `
@@ -35,7 +47,10 @@ const Name = styled.p`
 const Reviews = () => {
   return (
     <Section id='reviews' bg={theme.colors.blueSky}>
-      <h2>What people are saying</h2>
+      <Top>
+        <h2>What people are saying</h2>
+        <Chair src='/chair.jpeg' alt='chair and plants' />
+      </Top>
       <Flex>
         {reviewData.map(review => (
           <ReviewCard key={review.id}>

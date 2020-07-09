@@ -14,7 +14,13 @@ const globalStyles = css`
       ${theme.colors.grassGreen} 2%,
       ${theme.colors.yellow} 2%
     );
+    color: ${theme.colors.greenDarkest};
     -webkit-font-smoothing: antialiased;
+  }
+
+  @font-face {
+    font-family: 'Bodoni';
+    src: local('/public/fonts/Bodoni-roman.ttf') format('truetype');
   }
 
   img {
@@ -31,10 +37,10 @@ const globalStyles = css`
   h1,
   h2,
   h3 {
+    font-family: 'Bodoni';
     text-align: center;
   }
 
-  h1,
   h2 {
     margin-top: 0;
   }

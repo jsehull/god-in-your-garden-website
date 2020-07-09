@@ -29,12 +29,12 @@ const Image = styled.img`
 `
 
 const TextBox = styled.div`
-  margin: 10px 2em;
+  margin: 10px 1.5em;
   flex: 1;
-  color: red;
   text-align: left;
 
   @media (min-width: 950px) {
+    margin: 10px 2em;
     order: ${props => (props.reverse ? -1 : 1)};
   }
 `

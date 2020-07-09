@@ -5,6 +5,7 @@ import ImageAndText from '../components/ImageAndText'
 import Order from '../components/Order'
 import Reviews from '../components/Reviews'
 import Footer from '../components/Footer'
+// import theme from '../theme'
 
 const index = () => {
   return (
@@ -17,7 +18,7 @@ const index = () => {
       <Hero />
       <ImageAndText
         id='book'
-        bg='forestgreen'
+        bg='#a1c956'
         title='About the book'
         src='/cover.jpeg'
         width='200px'
@@ -29,7 +30,7 @@ const index = () => {
       <ImageAndText
         reverse
         id='author'
-        bg='forestgreen'
+        bg='#a1c956'
         title='About the author'
         src='/author.jpeg'
         width='300px'
