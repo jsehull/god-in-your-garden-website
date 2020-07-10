@@ -1,6 +1,7 @@
 import Section from '../components/Section'
 import styled from '@emotion/styled'
 import theme from '../theme'
+import { IconData } from '../data'
 
 const Disclaimer = styled.p`
   margin: 0 auto 20px;
@@ -50,19 +51,17 @@ const Order = () => {
       </Disclaimer>
       <Type>Paperback</Type>
       <Flex>
-        {iconData
-          .filter(icon => icon.paperback === true)
-          .map(icon => (
-            <A key={icon.id} href={icon.url}>
-              <LogoBox>
-                <Logo src={icon.img} alt={icon.company} />
-              </LogoBox>
-            </A>
-          ))}
+        {IconData.filter(icon => icon.paperback === true).map(icon => (
+          <A key={icon.id} href={icon.url}>
+            <LogoBox>
+              <Logo src={icon.img} alt={icon.company} />
+            </LogoBox>
+          </A>
+        ))}
       </Flex>
       <Type>Digital Editions</Type>
       <Flex>
-        {iconData.map(icon => (
+        {IconData.map(icon => (
           <A key={icon.id} href={icon.url}>
             <LogoBox>
               <Logo src={icon.img} alt={icon.company} />
@@ -75,36 +74,3 @@ const Order = () => {
 }
 
 export default Order
-
-const iconData = [
-  {
-    id: 1,
-    company: 'BookBaby',
-    url: 'https://store.bookbaby.com/book/god-in-your-garden',
-    img: '/logos/bookbaby.gif',
-    paperback: true
-  },
-  {
-    id: 2,
-    company: 'Amazon',
-    url:
-      'https://www.amazon.com/God-Your-Garden-Wants-Life-ebook/dp/B0888TY2YK/ref=sr_1_2?dchild=1&keywords=god+in+your+garden&qid=1594140068&sr=8-2',
-    img: '/logos/amazon.jpg',
-    paperback: false
-  },
-  {
-    id: 3,
-    company: 'Barnes and Noble',
-    url:
-      'https://www.barnesandnoble.com/w/god-in-your-garden-scott-hull/1136984866?ean=9781098309114',
-    img: '/logos/barnesandnoble.png',
-    paperback: false
-  },
-  {
-    id: 4,
-    company: 'kobo',
-    url: 'https://www.kobo.com/us/en/ebook/god-in-your-garden',
-    img: '/logos/kobo.png',
-    paperback: false
-  }
-]

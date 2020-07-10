@@ -1,8 +1,6 @@
 module.exports = {
   colors: {
-    black: '#0f1f1c',
-    black1: '#011b1c',
-    black2: '#081a1e',
+    black: '#011b1c',
     white: '#fff',
     blueSky: '#bde2e8',
     blueRoom: '#b1e7eb',

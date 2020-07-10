@@ -1,6 +1,7 @@
 import Section from './Section'
 import styled from '@emotion/styled'
 import theme from '../theme'
+import { ReviewData } from '../data'
 
 const Top = styled.div`
   text-align: center;
@@ -19,15 +20,14 @@ const Flex = styled.div`
 
 const ReviewCard = styled.div`
   margin: 10px;
-  padding: 20px;
+  padding: 30px 20px;
   width: 300px;
-  background: ${theme.colors.blueSky};
-  background: linear-gradient(
-    0deg,
-    ${theme.colors.blueSky} 20%,
-    ${theme.colors.orangeLight} 90%
-  );
+  background: ${theme.colors.white};
   text-align: center;
+  -webkit-box-shadow: 3px 5px 10px 0px ${theme.colors.black};
+  -moz-box-shadow: 3px 5px 10px 0px ${theme.colors.black};
+  box-shadow: 3px 5px 10px 0px ${theme.colors.black};
+  border-radius: 15px;
 `
 
 const Photo = styled.img`
@@ -39,7 +39,8 @@ const Quote = styled.p`
 `
 
 const Name = styled.p`
-  margin: 0 50px 15px 0;
+  margin: 0;
+  margin-right: 50px;
   font-style: italic;
   text-align: right;
 `
@@ -52,7 +53,7 @@ const Reviews = () => {
         <Chair src='/chair.jpeg' alt='chair and plants' />
       </Top>
       <Flex>
-        {reviewData.map(review => (
+        {ReviewData.map(review => (
           <ReviewCard key={review.id}>
             <Photo src={review.img} alt={`${review.name} with book`} />
             <Quote>{review.quote}</Quote>
@@ -65,48 +66,3 @@ const Reviews = () => {
 }
 
 export default Reviews
-
-const reviewData = [
-  {
-    id: 1,
-    name: 'BookBaby',
-    img: 'https://via.placeholder.com/200x300',
-    quote:
-      '(240 chars)As a pastor, brother, and friend, Scott has served in Texas, Pennsylvania, California, Wisconsin, and Connecticut. Scott and Susan currently reside in North Carolina and they have 3 married children with 7 (so far) grandchildren.'
-  },
-  {
-    id: 2,
-    name: 'Karen',
-    img: 'https://via.placeholder.com/200x300',
-    quote:
-      "(400 chars)It's here! I'm so excited to share this! The idea of God in my Garden has been life changing for me and it's finally in a book that I can share. Pastor Scott has been my mentor for many years now. I'm so thankful for the things he has helped me walk through. I'm blown away by the insight he has and his heart for helping others have a relationship with God that is personal and alive. Check it out!"
-  },
-  {
-    id: 3,
-    name: 'Barnes and Noble',
-    img: 'https://via.placeholder.com/200x300',
-    quote:
-      '(240 chars)As a pastor, brother, and friend, Scott has served in Texas, Pennsylvania, California, Wisconsin, and Connecticut. Scott and Susan currently reside in North Carolina and they have 3 married children with 7 (so far) grandchildren.'
-  },
-  {
-    id: 4,
-    name: 'BookBaby',
-    img: 'https://via.placeholder.com/200x300',
-    quote:
-      '(240 chars)As a pastor, brother, and friend, Scott has served in Texas, Pennsylvania, California, Wisconsin, and Connecticut. Scott and Susan currently reside in North Carolina and they have 3 married children with 7 (so far) grandchildren.'
-  },
-  {
-    id: 5,
-    name: 'Amazon',
-    img: 'https://via.placeholder.com/200x300',
-    quote:
-      '(240 chars)As a pastor, brother, and friend, Scott has served in Texas, Pennsylvania, California, Wisconsin, and Connecticut. Scott and Susan currently reside in North Carolina and they have 3 married children with 7 (so far) grandchildren.'
-  },
-  {
-    id: 6,
-    name: 'Barnes and Noble',
-    img: 'https://via.placeholder.com/200x300',
-    quote:
-      '(240 chars)As a pastor, brother, and friend, Scott has served in Texas, Pennsylvania, California, Wisconsin, and Connecticut. Scott and Susan currently reside in North Carolina and they have 3 married children with 7 (so far) grandchildren.'
-  }
-]

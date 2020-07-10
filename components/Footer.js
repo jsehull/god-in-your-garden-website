@@ -19,7 +19,7 @@ const GardenBox = styled.div`
 `
 
 const P = styled.p`
-  margin: 0 0 25px;
+  margin: 0 0 20px;
   color: ${theme.colors.greenDarkest};
 `
 
