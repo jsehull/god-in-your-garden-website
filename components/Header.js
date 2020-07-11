@@ -26,6 +26,7 @@ const NavBar = styled.ul`
   margin: 0;
   padding: 0;
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   list-style: none;
 `

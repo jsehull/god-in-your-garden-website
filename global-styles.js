@@ -1,4 +1,5 @@
 import { Global, css } from '@emotion/core'
+import styled from '@emotion/styled'
 import theme from './theme'
 
 const globalStyles = css`
@@ -48,6 +49,11 @@ const globalStyles = css`
   h2 {
     font-size: 2em;
   }
+`
+export const SpanOrange = styled.span`
+  color: ${theme.colors.orangeDark};
+  font-weight: bold;
+  font-style: italic;
 `
 
 const GlobalStyles = () => <Global styles={globalStyles} />

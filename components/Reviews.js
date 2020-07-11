@@ -19,7 +19,7 @@ const Flex = styled.div`
 `
 
 const ReviewCard = styled.div`
-  margin: 10px;
+  margin: 20px;
   padding: 30px 20px;
   width: 300px;
   background: ${theme.colors.white};

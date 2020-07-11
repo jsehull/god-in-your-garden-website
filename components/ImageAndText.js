@@ -35,7 +35,7 @@ const Image = styled.img`
 
 const TextBox = styled.div`
   margin: 1em;
-  flex: 1;
+  flex: 2;
   text-align: left;
 
   @media (min-width: 950px) {
@@ -62,14 +62,12 @@ const ImageAndText = ({
       <Flex>
         <ImageBox width={width}>
           <Image src={src} width={width} alt={alt} />
-          {id === 'book' ? <Button text='click click' /> : null}
         </ImageBox>
         <TextBox reverse={reverse}>
           <p>{p1}</p>
           <p>{p2}</p>
         </TextBox>
       </Flex>
-      {id === 'book' ? <Who /> : null}
     </Section>
   )
 }

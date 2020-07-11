@@ -1,5 +1,6 @@
 import theme from '../theme'
 import styled from '@emotion/styled'
+import { SpanOrange } from '../global-styles'
 import Button from './Button'
 
 const StyledSection = styled.section`
@@ -45,7 +46,9 @@ const Hero = () => {
   return (
     <StyledSection bg={theme.colors.blueSky}>
       {/* <GardenBox> */}
-      <Title>God in your Garden</Title>
+      <Title>
+        God <SpanOrange>in your</SpanOrange> Garden
+      </Title>
       <div>
         <Description>He Wants to Do Life with You</Description>
         <Author>by Scott Hull</Author>
