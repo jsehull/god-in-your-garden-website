@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styled from '@emotion/styled'
 
 const StyledHeader = styled.header`
-  margin: 10px auto;
+  margin: 0 auto;
   padding: 5px;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,6 @@ const StyledHeader = styled.header`
   align-items: center;
   width: 100%;
   max-width: 1280px;
-  background: coral;
 
   @media (min-width: 950px) {
     flex-direction: row;
@@ -18,7 +17,7 @@ const StyledHeader = styled.header`
 `
 
 const NavTitle = styled.a`
-  margin: 0;
+  margin: 10px 0;
   font-size: 1.5em;
   font-weight: bold;
 `
@@ -26,7 +25,8 @@ const NavTitle = styled.a`
 const NavBar = styled.ul`
   margin: 0;
   padding: 0;
-  display: inline;
+  display: flex;
+  align-items: center;
   list-style: none;
 `
 
@@ -42,6 +42,13 @@ const A = styled.a`
   &:hover {
     text-decoration: underline;
   }
+`
+
+const BuyNow = styled.button`
+  text-decoration: none;
+  background: coral;
+  font-weight: bold;
+  border-width: 0;
 `
 
 const Header = () => (
@@ -62,9 +69,9 @@ const Header = () => (
       <Li>
         <A href='#reviews'>Reviews</A>
       </Li>
-      <Li>
-        <A href='#'>Contact</A>
-      </Li>
+      <BuyNow>
+        <A href='#'>BUY NOW</A>
+      </BuyNow>
       {/* <Li>
         <Link href='/about'>
           <A>About</A>

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 const Text = styled.p`
-  margin: 0 2em;
+  margin: 1em 2em 0;
 `
 
 const Who = () => {
@@ -16,8 +16,9 @@ const Who = () => {
         opportunity available for ALL of us—students and teachers, professionals
         and administrators, labor and management, singles and married, young and
         retired—anyone desiring an intimate and hands-on life together with
-        God.” — Scott Hull
+        God.”
       </Text>
+      <Text>- Scott Hull</Text>
     </>
   )
 }

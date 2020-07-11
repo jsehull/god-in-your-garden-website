@@ -45,24 +45,32 @@ const Order = () => {
   return (
     <Section id='order' bg={theme.colors.blueSky}>
       <h2>Order now</h2>
-      <Disclaimer>
-        Purchases directly from BookBaby help support independent authors like
-        Scott.
-      </Disclaimer>
       <Type>Paperback</Type>
       <Flex>
         {IconData.filter(icon => icon.paperback === true).map(icon => (
-          <A key={icon.id} href={icon.url}>
+          <A
+            key={icon.id}
+            href={icon.url}
+            target='_blank'
+            rel='noopener noreferrer'>
             <LogoBox>
               <Logo src={icon.img} alt={icon.company} />
             </LogoBox>
           </A>
         ))}
       </Flex>
+      <Disclaimer>
+        Purchases directly from BookBaby help support independent authors like
+        Scott.
+      </Disclaimer>
       <Type>Digital Editions</Type>
       <Flex>
         {IconData.map(icon => (
-          <A key={icon.id} href={icon.url}>
+          <A
+            key={icon.id}
+            href={icon.url}
+            target='_blank'
+            rel='noopener noreferrer'>
             <LogoBox>
               <Logo src={icon.img} alt={icon.company} />
             </LogoBox>

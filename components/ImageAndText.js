@@ -18,7 +18,7 @@ const Flex = styled.div`
 `
 
 const ImageBox = styled.div`
-  margin: 10px;
+  margin: 1em;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -28,25 +28,36 @@ const ImageBox = styled.div`
 
 const Image = styled.img`
   width: ${props => props.width};
-  -webkit-box-shadow: 5px 8px 20px 5px ${theme.colors.black};
-  -moz-box-shadow: 5px 8px 20px 5px ${theme.colors.black};
-  box-shadow: 5px 8px 20px 5px ${theme.colors.black};
+  -webkit-box-shadow: 5px 5px 20px 2px ${theme.colors.black};
+  -moz-box-shadow: 5px 5px 20px 2px ${theme.colors.black};
+  box-shadow: 5px 5px 20px 2px ${theme.colors.black};
 `
 
 const TextBox = styled.div`
-  margin: 10px 1.5em;
+  margin: 1em;
   flex: 1;
   text-align: left;
 
   @media (min-width: 950px) {
-    margin: 10px 2em;
+    margin: 1em 2em;
     order: ${props => (props.reverse ? -1 : 1)};
   }
 `
 
-const ImageAndText = ({ id, bg, title, src, width, alt, p1, p2, reverse }) => {
+const ImageAndText = ({
+  id,
+  bg,
+  color,
+  title,
+  src,
+  width,
+  alt,
+  p1,
+  p2,
+  reverse
+}) => {
   return (
-    <Section id={id} bg={bg}>
+    <Section id={id} bg={bg} color={color}>
       <h2>{title}</h2>
       <Flex>
         <ImageBox width={width}>

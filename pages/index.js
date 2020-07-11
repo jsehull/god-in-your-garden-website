@@ -30,7 +30,8 @@ const index = () => {
       <ImageAndText
         reverse
         id='author'
-        bg='#a1c956'
+        bg='#095c30'
+        color='#bfdda9'
         title='About the author'
         src='/author.jpeg'
         width='300px'
