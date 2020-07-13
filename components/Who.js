@@ -17,7 +17,7 @@ const StyledSection = styled.section`
 const Container = styled.div`
   margin: 0 auto;
   padding: 30px 20px;
-  max-width: 800px;
+  max-width: 600px;
   width: 100%;
   background: no-repeat url('/images/gray-tree-bg.jpeg'), #fff;
   background-size: 100%;

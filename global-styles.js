@@ -13,7 +13,7 @@ const globalStyles = css`
     background: linear-gradient(
       0deg,
       ${theme.colors.grassGreen} 2%,
-      ${theme.colors.yellow} 2%
+      ${theme.colors.blueSky} 2%
     );
     color: ${theme.colors.greenDarkest};
     -webkit-font-smoothing: antialiased;
@@ -44,12 +44,15 @@ const globalStyles = css`
 
   h2 {
     margin-top: 0;
-  }
-
-  h2 {
     font-size: 2em;
   }
+
+  a {
+    color: ${theme.colors.greenDarkest};
+    text-decoration: none;
+  }
 `
+
 export const SpanOrange = styled.span`
   color: ${theme.colors.orangeDark};
   font-weight: bold;

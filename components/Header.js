@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import styled from '@emotion/styled'
+import theme from '../theme'
+import Button from './Button'
 
 const StyledHeader = styled.header`
   margin: 0 auto;
-  padding: 5px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,6 +14,7 @@ const StyledHeader = styled.header`
   max-width: 1280px;
 
   @media (min-width: 950px) {
+    padding: 10px 25px;
     flex-direction: row;
   }
 `
@@ -32,9 +35,11 @@ const NavBar = styled.ul`
 `
 
 const Li = styled.li`
-  margin: 10px;
-  display: inline;
-  background: cyan;
+  margin: 5px;
+
+  @media (min-width: 950px) {
+    margin: 10px;
+  }
 `
 
 const A = styled.a`
@@ -45,11 +50,17 @@ const A = styled.a`
   }
 `
 
-const BuyNow = styled.button`
-  text-decoration: none;
-  background: coral;
-  font-weight: bold;
-  border-width: 0;
+const BuyNow = styled.a`
+  background: ${theme.colors.yellow};
+  padding: 8px;
+
+  @media (min-width: 350px) {
+    padding: 10px;
+  }
+
+  &:hover {
+    background: ${theme.colors.white};
+  }
 `
 
 const Header = () => (
@@ -59,20 +70,23 @@ const Header = () => (
     </Link>
     <NavBar>
       <Li>
-        <A href='#book'>Book</A>
-      </Li>
-      <Li>
         <A href='#order'>Order</A>
       </Li>
       <Li>
         <A href='#author'>Author</A>
       </Li>
       <Li>
+        <A href='#music'>Music</A>
+      </Li>
+      <Li>
         <A href='#reviews'>Reviews</A>
       </Li>
-      <BuyNow>
-        <A href='#'>BUY NOW</A>
-      </BuyNow>
+      {/* <Li> */}
+      <Button text='buy now' link='#' />
+      {/* </Li> */}
+      {/* <BuyNow>
+        <A href='#'>Buy now</A>
+      </BuyNow> */}
       {/* <Li>
         <Link href='/about'>
           <A>About</A>

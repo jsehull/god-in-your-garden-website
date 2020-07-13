@@ -5,57 +5,63 @@ import Button from './Button'
 
 const StyledSection = styled.section`
   width: 100%;
-  height: 90vh;
-  /* position: relative; */
+  height: 81hv;
+  min-height: 575px;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-`
-const GardenBox = styled.div`
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  /* width: 1000px; */
-  background: no-repeat url('/garden.jpeg');
-  background-size: 1000px;
-  background-position: 50% 100%;
-`
-
-const Test = styled.img`
-  max-width: 1000px;
-  width: 100%;
+  background-position: 25% 101%;
 `
 
 const Title = styled.h1`
-  font-size: 3em;
+  margin: 50px 0;
+  font-size: 5em;
+  line-height: 0.7em;
+`
+
+const God = styled.span`
+  font-size: 1.85em;
+`
+
+const Italics = styled(SpanOrange)`
+  margin-left: -35px;
+  font-size: 0.4em;
 `
 
 const Description = styled.p`
-  font-size: 1.5em;
+  margin: 10px 0 20px;
+  font-size: 1.85em;
 `
 
 const Author = styled.p`
-  font-size: 1em;
+  margin-top: 0;
+  font-size: 1.25em;
+`
+
+const Garden = styled.img`
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1400px;
 `
 
 const Hero = () => {
   return (
     <StyledSection bg={theme.colors.blueSky}>
-      {/* <GardenBox> */}
       <Title>
-        God <SpanOrange>in your</SpanOrange> Garden
+        <God>God</God> <br />
+        <Italics>in your</Italics> <br />
+        Garden
       </Title>
       <div>
-        <Description>He Wants to Do Life with You</Description>
+        <Description>
+          He Wants to Do Life with <b>You</b>
+        </Description>
         <Author>by Scott Hull</Author>
         <Button text='Get book' link='#order' />
       </div>
-      <Test src='/garden.jpeg' alt='garden' />
-      {/* </GardenBox> */}
+      <Garden src='/garden.jpeg' alt='garden' />
     </StyledSection>
   )
 }

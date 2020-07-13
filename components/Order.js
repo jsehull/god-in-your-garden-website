@@ -25,6 +25,12 @@ const Flex = styled.div`
 const A = styled.a`
   margin: 10px;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.75;
+  }
 `
 
 const LogoBox = styled.div`
@@ -60,8 +66,8 @@ const Order = () => {
         ))}
       </Flex>
       <Disclaimer>
-        Purchases directly from BookBaby help support independent authors like
-        Scott.
+        Purchases made directly from BookBaby help support independent authors
+        like Scott.
       </Disclaimer>
       <Type>Digital Editions</Type>
       <Flex>
