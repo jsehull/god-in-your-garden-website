@@ -1,8 +1,10 @@
 import styled from '@emotion/styled'
 import theme from '../theme'
 import Section from './Section'
-import Who from '../components/Who'
-import Button from '../components/Button'
+
+const Title = styled.h2`
+  color: $(props => {});
+`
 
 const Flex = styled.div`
   margin: 0 auto;
@@ -58,7 +60,7 @@ const ImageAndText = ({
 }) => {
   return (
     <Section id={id} bg={bg} color={color}>
-      <h2>{title}</h2>
+      <Title>{title}</Title>
       <Flex>
         <ImageBox width={width}>
           <Image src={src} width={width} alt={alt} />

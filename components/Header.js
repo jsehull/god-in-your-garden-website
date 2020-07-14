@@ -5,7 +5,6 @@ import Button from './Button'
 
 const StyledHeader = styled.header`
   margin: 0 auto;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -19,10 +18,18 @@ const StyledHeader = styled.header`
   }
 `
 
-const NavTitle = styled.a`
+const NavLogo = styled.a`
   margin: 10px 0;
   font-size: 1.5em;
   font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  img {
+    width: 50px;
+  }
 `
 
 const NavBar = styled.ul`
@@ -43,14 +50,12 @@ const Li = styled.li`
 `
 
 const A = styled.a`
-  text-decoration: none;
-
   &:hover {
     text-decoration: underline;
   }
 `
 
-const BuyNow = styled.a`
+const BuyNow = styled(Button)`
   background: ${theme.colors.yellow};
   padding: 8px;
 
@@ -66,7 +71,9 @@ const BuyNow = styled.a`
 const Header = () => (
   <StyledHeader>
     <Link href='/'>
-      <NavTitle>God in your Garden</NavTitle>
+      <NavLogo>
+        <img src='/author.jpeg' alt='logo' />
+      </NavLogo>
     </Link>
     <NavBar>
       <Li>
@@ -82,7 +89,10 @@ const Header = () => (
         <A href='#reviews'>Reviews</A>
       </Li>
       {/* <Li> */}
-      <Button text='buy now' link='#' />
+      <BuyNow
+        text='buy now'
+        link='https://store.bookbaby.com/book/god-in-your-garden'
+      />
       {/* </Li> */}
       {/* <BuyNow>
         <A href='#'>Buy now</A>

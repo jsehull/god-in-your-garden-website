@@ -24,7 +24,8 @@ const P = styled.p`
 `
 
 const A = styled.a`
-  color: ${theme.colors.greenDarkest};
+  /* color: ${theme.colors.greenDarkest}; */
+  color: red;
 `
 
 const Footer = () => {

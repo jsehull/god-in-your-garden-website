@@ -15,11 +15,10 @@ const index = () => {
         <title>God in your Garden by Scott Hull</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Header />
       <Hero />
       <ImageAndText
         id='book'
-        bg='#a1c956'
+        bg='#91d44b'
         title='About the book'
         src='/cover.jpeg'
         width='200px'

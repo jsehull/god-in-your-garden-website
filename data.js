@@ -82,7 +82,7 @@ export const ReviewData = [
     name: 'Victoria',
     img: '/images/reviews/victoria.jpeg',
     quote:
-      '(150 chars)As a pastor, brother, and friend, Scott has served in Texas, Pennsylvania, California, Wisconsin, and Connecticut. Scott and Susan current.'
+      'A childhood filled with abuse by my father gave me much hesitation to enter into a relationship with God, because I didn’t want another cold, harsh dictator “running my life.” I just couldn’t imagine what a loving Father is and how important I could be to him. Scott Hull’s book beautifully explains the truth that entirely transformed my sense of value and purpose here on earth. Whether you are simply considering a relationship with God or have known him for years and wish to grow closer to him, this book has refreshing, comforting, and honest answers to questions you might have been too afraid to ask. '
   },
   {
     id: 4,

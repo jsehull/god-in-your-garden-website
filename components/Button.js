@@ -9,10 +9,12 @@ const StyledButton = styled.a`
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
+  color: ${theme.colors.greenLetters};
 
   &:hover {
-    background: ${theme.colors.yellow};
     cursor: pointer;
+    background: ${theme.colors.leafMedium};
+    color: ${theme.colors.yellow};
   }
 `
 

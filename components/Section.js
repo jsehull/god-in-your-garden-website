@@ -3,7 +3,11 @@ import styled from '@emotion/styled'
 const StyledSection = styled.section`
   width: 100%;
   background: ${props => props.bg};
+
+  h2,
+  p {
   color: ${props => props.color};
+  }
   /* background: ${props => `${props.bg}`}; */
   /* TODO bg for theme props */
   /* TODO color IF THEME X */

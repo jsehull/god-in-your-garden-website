@@ -39,6 +39,7 @@ const globalStyles = css`
   h2,
   h3 {
     font-family: 'Bodoni';
+    color: ${theme.colors.greenLetters};
     text-align: center;
   }
 
@@ -48,7 +49,7 @@ const globalStyles = css`
   }
 
   a {
-    color: ${theme.colors.greenDarkest};
+    color: ${theme.colors.brownLetters};
     text-decoration: none;
   }
 `

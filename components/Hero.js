@@ -1,11 +1,12 @@
-import theme from '../theme'
 import styled from '@emotion/styled'
+import theme from '../theme'
 import { SpanOrange } from '../global-styles'
+import Header from './Header'
 import Button from './Button'
 
 const StyledSection = styled.section`
   width: 100%;
-  height: 81hv;
+  height: 100vh;
   min-height: 575px;
   display: flex;
   flex-flow: column;
@@ -16,9 +17,10 @@ const StyledSection = styled.section`
 `
 
 const Title = styled.h1`
-  margin: 50px 0;
+  margin: 50px 0 20px;
   font-size: 5em;
   line-height: 0.7em;
+  color: ${theme.colors.greenLetters};
 `
 
 const God = styled.span`
@@ -36,7 +38,7 @@ const Description = styled.p`
 `
 
 const Author = styled.p`
-  margin-top: 0;
+  margin: 0 auto 60px;
   font-size: 1.25em;
 `
 
@@ -49,6 +51,7 @@ const Garden = styled.img`
 const Hero = () => {
   return (
     <StyledSection bg={theme.colors.blueSky}>
+      <Header />
       <Title>
         <God>God</God> <br />
         <Italics>in your</Italics> <br />

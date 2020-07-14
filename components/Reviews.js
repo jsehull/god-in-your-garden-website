@@ -10,6 +10,10 @@ const Top = styled.div`
 const Chair = styled.img`
   margin-bottom: 26px;
   width: 200px;
+
+  @media (min-width: 950px) {
+    width: 300px;
+  }
 `
 const Flex = styled.div`
   display: flex;
