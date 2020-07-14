@@ -38,6 +38,17 @@ const index = () => {
         p1='Scott and Susan Hull have been walking with God in Christian ministry for nearly four decades. They desire for people to recognize God’s voice for themselves and to experience their own unique relationship with Him. Their heart has been to see God’s sons and daughters raised (not duplicated), blessed (not used), and released (not enlisted).'
         p2='As a pastor, brother, and friend, Scott has served in Texas, Pennsylvania, California, Wisconsin, and Connecticut. Scott and Susan currently reside in North Carolina and they have 3 married children with 7 (so far) grandchildren.'
       />
+      <ImageAndText
+        id='music'
+        bg='#243354'
+        color='#fff'
+        title='Solo Piano Album'
+        src='/images/music/album-cover.jpeg'
+        width='300px'
+        alt='album cover'
+        p1='Scott has created an inspirational and reflective solo piano album that you may enjoy as a listening companion with God in Your Garden. Time to Listen is a collection of eight spontaneous and new songs he recorded as he listened to what God was stirring in his Spirit.'
+        p2='This seventy-minute album of piano music has been used by many to create a spiritual ambiance for home or work environments. The peaceful atmosphere it provides has also proven to be a comfort for quiet time, reading, relaxing, or sleeping. The hope is that Time to Listen will inspire you to greater wonder and creativity as you learn to enjoy doing life with God in your Garden.'
+      />
       <Reviews />
       <Footer />
     </>
