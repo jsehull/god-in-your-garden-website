@@ -54,7 +54,7 @@ const Reviews = () => {
     <Section id='reviews' bg={theme.colors.blueSky}>
       <Top>
         <h2>What people are saying</h2>
-        <Chair src='/chair.jpeg' alt='chair and plants' />
+        <Chair src='/images/art/chair.jpeg' alt='chair and plants' />
       </Top>
       <Flex>
         {ReviewData.map(review => (

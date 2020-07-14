@@ -34,7 +34,7 @@ export const IconData = [
     id: 1,
     company: 'BookBaby',
     url: 'https://store.bookbaby.com/book/god-in-your-garden',
-    img: '/logos/bookbaby.gif',
+    img: '/images/logos/bookbaby.gif',
     paperback: true
   },
   {
@@ -42,7 +42,7 @@ export const IconData = [
     company: 'Amazon',
     url:
       'https://www.amazon.com/God-Your-Garden-Wants-Life-ebook/dp/B0888TY2YK/ref=sr_1_2?dchild=1&keywords=god+in+your+garden&qid=1594140068&sr=8-2',
-    img: '/logos/amazon.jpg',
+    img: '/images/logos/amazon.jpg',
     paperback: false
   },
   {
@@ -50,14 +50,14 @@ export const IconData = [
     company: 'Barnes and Noble',
     url:
       'https://www.barnesandnoble.com/w/god-in-your-garden-scott-hull/1136984866?ean=9781098309114',
-    img: '/logos/barnesandnoble.png',
+    img: '/images/logos/barnesandnoble.png',
     paperback: false
   },
   {
     id: 4,
     company: 'kobo',
     url: 'https://www.kobo.com/us/en/ebook/god-in-your-garden',
-    img: '/logos/kobo.png',
+    img: '/images/logos/kobo.png',
     paperback: false
   }
 ]
@@ -68,7 +68,7 @@ export const ReviewData = [
     name: 'Ryan',
     img: '/images/reviews/ryan-kody.jpeg',
     quote:
-      '(240 chars)As a pastor, brother, and friend, Scott has served in Texas, Pennsylvania, California, Wisconsin, and Connecticut. Scott and Susan currently reside in North Carolina and they have 3 married children with 7 (so far) grandchildren.'
+      '(287 chars)Churchly ipsum dolor amet brother resurgent in the world reach the nations worship leader rich mahogany. Contata baptist wrecked accountability group. Revelation blessed fellowship, relevant dig in contata relational devo community elevate worship leader inspiration theology. '
   },
   {
     id: 2,
@@ -95,7 +95,7 @@ export const ReviewData = [
     name: 'Doug',
     img: '/images/reviews/doug.jpeg',
     quote:
-      '(240 chars)As a pastor, brother, and friend, Scott has served in Texas, Pennsylvania, California, Wisconsin, and Connecticut. Scott and Susan currently reside in North Carolina and they have 3 married children with 7 (so far) grandchildren.'
+      '(401 chars)Revival hyper-spiritual emergent life-changing dive in postmodern very theology bless his heart revelation good steward special music relational. Good steward theology revelation, devo life-changing super spiritual formation lostness pursuing catalyst testimony watered down volunteer small group. Brother brought it have your way atmosphere echo dive in, testimony fellowship of the world.'
   },
   {
     id: 6,

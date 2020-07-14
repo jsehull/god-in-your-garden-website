@@ -72,7 +72,7 @@ const Header = () => (
   <StyledHeader>
     <Link href='/'>
       <NavLogo>
-        <img src='/author.jpeg' alt='logo' />
+        <img src='/images/art/tree.jpeg' alt='logo' />
       </NavLogo>
     </Link>
     <NavBar>

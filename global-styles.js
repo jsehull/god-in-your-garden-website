@@ -55,7 +55,7 @@ const globalStyles = css`
 `
 
 export const SpanOrange = styled.span`
-  color: ${theme.colors.orangeDark};
+  color: ${theme.colors.orangeLetters};
   font-weight: bold;
   font-style: italic;
 `

@@ -13,7 +13,7 @@ const GardenBox = styled.div`
   justify-content: flex-end;
   align-items: center;
   height: 300px;
-  background: no-repeat url('/garden.jpeg');
+  background: no-repeat url('/images/art/garden.jpeg');
   background-size: 1200px;
   background-position: 50% 100%;
 `

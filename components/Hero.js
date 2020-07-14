@@ -7,7 +7,7 @@ import Button from './Button'
 const StyledSection = styled.section`
   width: 100%;
   height: 100vh;
-  min-height: 575px;
+  min-height: 660px;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -64,7 +64,7 @@ const Hero = () => {
         <Author>by Scott Hull</Author>
         <Button text='Get book' link='#order' />
       </div>
-      <Garden src='/garden.jpeg' alt='garden' />
+      <Garden src='/images/art/garden.jpeg' alt='garden' />
     </StyledSection>
   )
 }
