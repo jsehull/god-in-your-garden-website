@@ -18,8 +18,18 @@ const StyledButton = styled.a`
   }
 `
 
-const Button = ({ text, link }) => {
-  return <StyledButton href={link}>{text}</StyledButton>
+const Button = ({ text, link, ext }) => {
+  return (
+    <>
+      {ext ? (
+        <StyledButton href={link} target='_blank' rel='noopener noreferrer'>
+          {text}
+        </StyledButton>
+      ) : (
+        <StyledButton href={link}>{text}</StyledButton>
+      )}
+    </>
+  )
 }
 
 export default Button

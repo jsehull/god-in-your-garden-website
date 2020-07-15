@@ -92,6 +92,7 @@ const Header = () => (
       <BuyNow
         text='buy now'
         link='https://store.bookbaby.com/book/god-in-your-garden'
+        ext
       />
       {/* </Li> */}
       {/* <BuyNow>

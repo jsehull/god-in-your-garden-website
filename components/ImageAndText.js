@@ -1,10 +1,7 @@
 import styled from '@emotion/styled'
 import theme from '../theme'
 import Section from './Section'
-
-const Title = styled.h2`
-  color: $(props => {});
-`
+import Logos from './Logos'
 
 const Flex = styled.div`
   margin: 0 auto;
@@ -46,6 +43,13 @@ const TextBox = styled.div`
   }
 `
 
+const RadioLink = styled.a`
+  margin-left: 5px;
+  color: ${theme.colors.orangeLetters};
+  font-weight: bold;
+  text-decoration: underline;
+`
+
 const ImageAndText = ({
   id,
   bg,
@@ -60,7 +64,7 @@ const ImageAndText = ({
 }) => {
   return (
     <Section id={id} bg={bg} color={color}>
-      <Title>{title}</Title>
+      <h2>{title}</h2>
       <Flex>
         <ImageBox width={width}>
           <Image src={src} width={width} alt={alt} />
@@ -68,6 +72,18 @@ const ImageAndText = ({
         <TextBox reverse={reverse}>
           <p>{p1}</p>
           <p>{p2}</p>
+          {id === 'music' ? (
+            <p>
+              Scott is also one of the many artists featured on
+              <RadioLink
+                href='http://www.solopianoradio.com'
+                target='_blank'
+                rel='noopener noreferrer'>
+                Whispersings: Solo Piano Radio
+              </RadioLink>
+            </p>
+          ) : null}
+          {id === 'music' ? <Logos type={id} /> : null}
         </TextBox>
       </Flex>
     </Section>

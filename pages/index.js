@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import ImageAndText from '../components/ImageAndText'
 import Who from '../components/Who'
 import Order from '../components/Order'
+import Logos from '../components/Logos'
 import Reviews from '../components/Reviews'
 import Footer from '../components/Footer'
 

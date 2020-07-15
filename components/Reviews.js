@@ -39,6 +39,7 @@ const Photo = styled.img`
 `
 
 const Quote = styled.p`
+  font-size: 1em;
   text-align: left;
 `
 
@@ -46,6 +47,7 @@ const Name = styled.p`
   margin: 0;
   margin-right: 50px;
   font-style: italic;
+  font-size: 1.3em;
   text-align: right;
 `
 

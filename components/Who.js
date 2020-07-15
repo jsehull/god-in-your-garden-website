@@ -19,7 +19,7 @@ const Container = styled.div`
   padding: 30px 20px;
   max-width: 600px;
   width: 100%;
-  background: no-repeat url('/images/gray-tree-bg.jpeg'), #fff;
+  background: no-repeat url('/images/art/gray-tree-bg.jpeg'), #fff;
   background-size: 100%;
   background-position: 25% 101%;
   text-align: center;

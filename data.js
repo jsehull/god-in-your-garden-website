@@ -29,7 +29,7 @@ export const AuthorSection = [
   }
 ]
 
-export const IconData = [
+export const BookLogoData = [
   {
     id: 1,
     company: 'BookBaby',
@@ -62,6 +62,35 @@ export const IconData = [
   }
 ]
 
+export const MusicLogoData = [
+  {
+    id: 1,
+    company: 'Apple',
+    url: 'https://music.apple.com/us/album/time-to-listen/280710366',
+    img: '/images/logos/apple.png'
+  },
+  {
+    id: 2,
+    company: 'Amazon',
+    url:
+      'https://www.amazon.com/Time-Listen-Scott-Hull/dp/B0019D2VWW/ref=ntt_mus_ep_dpi_1',
+    img: '/images/logos/amazon.jpg'
+  },
+  {
+    id: 3,
+    company: 'Google Play',
+    url:
+      'https://play.google.com/store/music/album/Scott_Hull_Time_to_Listen?id=Buypdb3uenktvzmnbn4bvp4wgzm&hl=en_US',
+    img: '/images/logos/google-play.png'
+  },
+  {
+    id: 4,
+    company: 'Spotify',
+    url: 'https://open.spotify.com/album/6aZcEdaRABIpYJASVS6Roc',
+    img: '/images/logos/spotify.png'
+  }
+]
+
 export const ReviewData = [
   {
     id: 1,
@@ -72,17 +101,17 @@ export const ReviewData = [
   },
   {
     id: 2,
-    name: 'Karen',
-    img: '/images/reviews/karen.jpeg',
-    quote:
-      "(400 chars)It's here! I'm so excited to share this! The idea of God in my Garden has been life changing for me and it's finally in a book that I can share. Pastor Scott has been my mentor for many years now. I'm so thankful for the things he has helped me walk through. I'm blown away by the insight he has and his heart for helping others have a relationship with God that is personal and alive. Check it out!"
-  },
-  {
-    id: 3,
     name: 'Victoria',
     img: '/images/reviews/victoria.jpeg',
     quote:
       'A childhood filled with abuse by my father gave me much hesitation to enter into a relationship with God, because I didn’t want another cold, harsh dictator “running my life.” I just couldn’t imagine what a loving Father is and how important I could be to him. Scott Hull’s book beautifully explains the truth that entirely transformed my sense of value and purpose here on earth. Whether you are simply considering a relationship with God or have known him for years and wish to grow closer to him, this book has refreshing, comforting, and honest answers to questions you might have been too afraid to ask. '
+  },
+  {
+    id: 3,
+    name: 'Karen',
+    img: '/images/reviews/karen.jpeg',
+    quote:
+      "It's here! I'm so excited to share this! The idea of God in my Garden has been life changing for me and it's finally in a book that I can share. Pastor Scott has been my mentor for many years now. I'm so thankful for the things he has helped me walk through. I'm blown away by the insight he has and his heart for helping others have a relationship with God that is personal and alive. Check it out!"
   },
   {
     id: 4,
@@ -102,6 +131,6 @@ export const ReviewData = [
     name: 'Brooke',
     img: '/images/reviews/brooke.jpeg',
     quote:
-      "My Father in LOVE (my husbands dad and pappy to my babies) wrote a book! I have been so excited to share this and we just got the green light! I've been shaped through the last 10 years by the revelation Scott carries from heaven, and this book is an incredible expression of that. Read this with me!"
+      'I’ve been shaped through the last 10 years by the revelation Scott carries from Heaven and this book is an incredible expression of that. It is an encouragement to all of us to live our lives empowered by the Truth that God is here and is doing life with us, and His life is flowing through us to every corner of our Garden. To every person, every encounter, every circumstance.'
   }
 ]
