@@ -2,6 +2,18 @@ import styled from '@emotion/styled'
 import theme from '../theme'
 import Section from './Section'
 import Logos from './Logos'
+import { SRLWrapper } from 'simple-react-lightbox'
+
+const options = {
+  settings: {
+    overlayColor: 'rgba(36, 51, 84, 0.95)'
+  },
+  buttons: {
+    showAutoplayButton: false,
+    showDownloadButton: false,
+    showThumbnailsButton: false
+  }
+}
 
 const Flex = styled.div`
   margin: 0 auto;
@@ -24,8 +36,31 @@ const ImageBox = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 950px) {
-    flex-direction: row;
+  div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      width: 50px;
+      height: 50px;
+      background: url(/images/zoom-in.png),
+        linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgba(242, 81, 27, 1) 50%);
+    }
+
+    /* TODO - cannot set pseudo element on img */
+    img {
+      position: relative;
+      cursor: zoom-in;
+    }
   }
 `
 
@@ -71,10 +106,22 @@ const ImageAndText = ({
       <h2>{title}</h2>
       <Flex>
         <ImageBox width={width}>
-          <Image src={src} width={width} alt={alt} />
           {id === 'book' ? (
-            <Image src='/images/art/back-cover.jpeg' width={width} alt={alt} />
-          ) : null}
+            <SRLWrapper options={options}>
+              <Image
+                src='/images/art/front-cover.jpeg'
+                width={width}
+                alt='Front cover'
+              />
+              <Image
+                src='/images/art/back-cover.jpeg'
+                width={width}
+                alt='Back cover'
+              />
+            </SRLWrapper>
+          ) : (
+            <Image src={src} width={width} alt={alt} />
+          )}
         </ImageBox>
         <TextBox even={even} reverse={reverse}>
           <p>{p1}</p>
