@@ -1,34 +1,3 @@
-export const BookSection = [
-  {
-    id: 'book',
-    bg: '#a1c956',
-    title: 'About the book',
-    src: '/cover.jpeg',
-    width: '200px',
-    alt: 'God in Your Garden',
-    p1:
-      'God in your Garden reveals the opportunity of a lifetime: God is eagerly waiting to live your life together with you—right where you are! You can know and experience God in the unique setting where you live, in a way few ever imagined possible.',
-    p2:
-      ' Exploring various scenes from the original “Garden of Eden” story, this book brings to life your individual living-space God designed for you and where He chooses to do life together with you.'
-  }
-]
-
-export const AuthorSection = [
-  {
-    reverse: 'reverse',
-    id: 'author',
-    bg: '#a1c956',
-    title: 'About the author',
-    src: '/author.jpeg',
-    width: '300px',
-    alt: 'author',
-    p1:
-      'Scott and Susan Hull have been walking with God in Christian ministry for nearly four decades. They desire for people to recognize God’s voice for themselves and to experience their own unique relationship with Him. Their heart has been to see God’s sons and daughters raised (not duplicated), blessed (not used), and released (not enlisted).',
-    p2:
-      'As a pastor, brother, and friend, Scott has served in Texas, Pennsylvania, California, Wisconsin, and Connecticut. Scott and Susan currently reside in North Carolina and they have 3 married children with 7 (so far) grandchildren.'
-  }
-]
-
 export const BookLogoData = [
   {
     id: 1,
@@ -131,6 +100,6 @@ export const ReviewData = [
     name: 'Brooke',
     img: '/images/reviews/brooke.jpeg',
     quote:
-      'I’ve been shaped through the last 10 years by the revelation Scott carries from Heaven and this book is an incredible expression of that. It is an encouragement to all of us to live our lives empowered by the Truth that God is here and is doing life with us, and His life is flowing through us to every corner of our Garden. To every person, every encounter, every circumstance.'
+      'I’ve been shaped through the last 10 years by the revelation Scott carries from Heaven and this book is an incredible expression of that. It is an encouragement for all of us to live our lives empowered by the Truth that God is here and is doing life with us. His life is flowing through us to every corner of our Garden, to every person, every encounter, every circumstance.'
   }
 ]

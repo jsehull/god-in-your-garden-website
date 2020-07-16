@@ -22,7 +22,7 @@ const A = styled.a`
 const LogoBox = styled.div`
   display: flex;
   align-items: center;
-  width: ${props => (props === 'music' ? '125px' : '150px')};
+  width: ${props => (props.type === 'music' ? '125px' : '150px')};
   height: 60px;
   background: #fff;
   border-radius: 5px;
@@ -33,26 +33,20 @@ const Logo = styled.img`
   border-radius: 5px;
 `
 
-const Logos = type => {
-  console.log(type)
-  let data = BookLogoData
-
-  if (type === 'music') {
-    console.log('show music')
-    return (data = MusicLogoData)
-  }
+const Logos = ({ type }) => {
+  let data
+  type === 'music' ? (data = MusicLogoData) : (data = BookLogoData)
 
   return (
     <>
       <Flex>
-        {console.log('type2', type)}
         {data.map(logo => (
           <A
             key={logo.id}
             href={logo.url}
             target='_blank'
             rel='noopener noreferrer'>
-            <LogoBox>
+            <LogoBox type={type}>
               <Logo src={logo.img} alt={logo.company} />
             </LogoBox>
           </A>

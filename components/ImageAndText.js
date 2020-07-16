@@ -23,19 +23,22 @@ const ImageBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 950px) {
+    flex-direction: row;
+  }
 `
 
 const Image = styled.img`
+  margin: 10px;
   width: ${props => props.width};
-  -webkit-box-shadow: 5px 5px 20px 2px ${theme.colors.black};
-  -moz-box-shadow: 5px 5px 20px 2px ${theme.colors.black};
   box-shadow: 5px 5px 20px 2px ${theme.colors.black};
 `
 
 const TextBox = styled.div`
   margin: 1em;
-  flex: 2;
   text-align: left;
+  flex: ${props => (props.even ? 1 : 2)};
 
   @media (min-width: 950px) {
     margin: 1em 2em;
@@ -60,7 +63,8 @@ const ImageAndText = ({
   alt,
   p1,
   p2,
-  reverse
+  reverse,
+  even
 }) => {
   return (
     <Section id={id} bg={bg} color={color}>
@@ -68,8 +72,11 @@ const ImageAndText = ({
       <Flex>
         <ImageBox width={width}>
           <Image src={src} width={width} alt={alt} />
+          {id === 'book' ? (
+            <Image src='/images/art/back-cover.jpeg' width={width} alt={alt} />
+          ) : null}
         </ImageBox>
-        <TextBox reverse={reverse}>
+        <TextBox even={even} reverse={reverse}>
           <p>{p1}</p>
           <p>{p2}</p>
           {id === 'music' ? (

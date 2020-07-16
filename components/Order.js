@@ -71,7 +71,7 @@ const Order = () => {
         like Scott.
       </Disclaimer>
       <Type>Digital Editions</Type>
-      <Logos />
+      <Logos type='book' />
     </Section>
   )
 }

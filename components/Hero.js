@@ -7,7 +7,7 @@ import Button from './Button'
 const StyledSection = styled.section`
   width: 100%;
   height: 100vh;
-  min-height: 660px;
+  min-height: 720px;
   display: flex;
   flex-flow: column;
   justify-content: space-between;

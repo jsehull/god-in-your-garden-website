@@ -16,7 +16,6 @@ const globalStyles = css`
       ${theme.colors.blueSky} 2%
     );
     color: ${theme.colors.greenDarkest};
-    -webkit-font-smoothing: antialiased;
   }
 
   @font-face {

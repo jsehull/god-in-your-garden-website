@@ -23,8 +23,6 @@ const Container = styled.div`
   background-size: 100%;
   background-position: 25% 101%;
   text-align: center;
-  -webkit-box-shadow: 3px 3px 10px 0px ${theme.colors.black};
-  -moz-box-shadow: 3px 3px 10px 0px ${theme.colors.black};
   box-shadow: 3px 3px 10px 0px ${theme.colors.black};
   border-radius: 15px;
 `
