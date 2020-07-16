@@ -88,36 +88,11 @@ const Header = () => (
       <Li>
         <A href='#reviews'>Reviews</A>
       </Li>
-      {/* <Li> */}
       <BuyNow
         text='buy now'
         link='https://store.bookbaby.com/book/god-in-your-garden'
         ext
       />
-      {/* </Li> */}
-      {/* <BuyNow>
-        <A href='#'>Buy now</A>
-      </BuyNow> */}
-      {/* <Li>
-        <Link href='/about'>
-          <A>About</A>
-        </Link>
-      </Li>
-      <Li>
-        <Link href='/projects'>
-          <A>Projects</A>
-        </Link>
-      </Li>
-      <Li>
-        <Link href='/blog'>
-          <A>Blog</A>
-        </Link>
-      </Li>
-      <Li>
-        <Link href='/contact'>
-          <A>Contact</A>
-        </Link>
-      </Li> */}
     </NavBar>
   </StyledHeader>
 )

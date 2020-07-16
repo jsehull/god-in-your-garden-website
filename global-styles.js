@@ -15,7 +15,7 @@ const globalStyles = css`
       ${theme.colors.grassGreen} 2%,
       ${theme.colors.blueSky} 2%
     );
-    color: ${theme.colors.greenDarkest};
+    color: ${theme.colors.black};
   }
 
   @font-face {
@@ -48,7 +48,7 @@ const globalStyles = css`
   }
 
   a {
-    color: ${theme.colors.brownLetters};
+    color: ${theme.colors.black};
     text-decoration: none;
   }
 `

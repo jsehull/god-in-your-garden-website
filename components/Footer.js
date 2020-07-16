@@ -20,20 +20,18 @@ const GardenBox = styled.div`
 
 const P = styled.p`
   margin: 0 0 20px;
-  color: ${theme.colors.greenDarkest};
 `
 
-const A = styled.a`
-  /* color: ${theme.colors.greenDarkest}; */
-  color: red;
-`
+const currentYear = new Date().getFullYear()
 
 const Footer = () => {
   return (
     <StyledFooter>
       <GardenBox>
-        <A href='#'>email@example.com</A>
-        <P>Copyright &#169; 2020 Scott Hull</P>
+        <a href='mailto:contact@godinyourgarden.com'>
+          contact@godinyourgarden.com
+        </a>
+        <P>Copyright &#169; {currentYear} Scott Hull</P>
       </GardenBox>
     </StyledFooter>
   )
