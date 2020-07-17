@@ -20,7 +20,14 @@ const globalStyles = css`
 
   @font-face {
     font-family: 'Bodoni';
-    src: local('/public/fonts/Bodoni-roman.ttf') format('truetype');
+    ${'' /* src: url('/fonts/Bodoni-roman.ttf') format('truetype'); */}
+    src: url('/fonts/Bodoni-11-Book.otf') format('opentype');
+    ${'' /* src: url('/fonts/Bodoni-11-Medium.otf') format('opentype'); */}
+  }
+
+  @font-face {
+    font-family: 'Bodoni-italic';
+    src: url('/fonts/Bodoni-italic.ttf') format('truetype');
   }
 
   img {
@@ -40,11 +47,13 @@ const globalStyles = css`
     font-family: 'Bodoni';
     color: ${theme.colors.greenLetters};
     text-align: center;
+    font-weight: normal;
   }
 
   h2 {
     margin-top: 0;
     font-size: 2em;
+    font-weight: 700;
   }
 
   a {
@@ -56,6 +65,7 @@ const globalStyles = css`
 export const SpanOrange = styled.span`
   color: ${theme.colors.orangeLetters};
   font-weight: bold;
+  font-family: 'Bodoni-italic';
   font-style: italic;
 `
 
