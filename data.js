@@ -63,10 +63,9 @@ export const MusicLogoData = [
 export const ReviewData = [
   {
     id: 1,
-    name: 'Ryan',
+    name: 'Ryan & Kody',
     img: '/images/reviews/ryan-kody.jpeg',
-    quote:
-      '(287 chars)Churchly ipsum dolor amet brother resurgent in the world reach the nations worship leader rich mahogany. Contata baptist wrecked accountability group. Revelation blessed fellowship, relevant dig in contata relational devo community elevate worship leader inspiration theology. '
+    quote: ''
   },
   {
     id: 2,

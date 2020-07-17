@@ -41,24 +41,8 @@ const ImageBox = styled.div`
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    position: relative;
 
-    &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 1;
-      width: 50px;
-      height: 50px;
-      background: url(/images/zoom-in.png),
-        linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgba(242, 81, 27, 1) 50%);
-    }
-
-    /* TODO - cannot set pseudo element on img */
     img {
-      position: relative;
       cursor: zoom-in;
     }
   }
@@ -108,16 +92,20 @@ const ImageAndText = ({
         <ImageBox width={width}>
           {id === 'book' ? (
             <SRLWrapper options={options}>
-              <Image
-                src='/images/art/front-cover.jpeg'
-                width={width}
-                alt='Front cover'
-              />
-              <Image
-                src='/images/art/back-cover.jpeg'
-                width={width}
-                alt='Back cover'
-              />
+              <a href='/images/art/front-cover.jpeg' data-attribute='SRL'>
+                <Image
+                  src='/images/thumbnail/front-cover-thumb.jpeg'
+                  width={width}
+                  alt='Front cover'
+                />
+              </a>
+              <a href='/images/art/back-cover.jpeg' data-attribute='SRL'>
+                <Image
+                  src='/images/thumbnail/back-cover-thumb.jpeg'
+                  width={width}
+                  alt='Back cover'
+                />
+              </a>
             </SRLWrapper>
           ) : (
             <Image src={src} width={width} alt={alt} />
