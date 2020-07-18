@@ -94,14 +94,14 @@ const ImageAndText = ({
             <SRLWrapper options={options}>
               <a href='/images/art/front-cover.jpeg' data-attribute='SRL'>
                 <Image
-                  src='/images/thumbnail/front-cover-thumb.jpeg'
+                  src='/images/thumbnail/front-cover-thumb.png'
                   width={width}
                   alt='Front cover'
                 />
               </a>
               <a href='/images/art/back-cover.jpeg' data-attribute='SRL'>
                 <Image
-                  src='/images/thumbnail/back-cover-thumb.jpeg'
+                  src='/images/thumbnail/back-cover-thumb.png'
                   width={width}
                   alt='Back cover'
                 />
