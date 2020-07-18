@@ -1,3 +1,3 @@
 # God in your Garden
 
-Visit website [here](https://godinyourgarden.com).
+Visit website @ [godinyourgarden.com](https://godinyourgarden.com).
