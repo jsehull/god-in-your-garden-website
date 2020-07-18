@@ -20,9 +20,7 @@ const globalStyles = css`
 
   @font-face {
     font-family: 'Bodoni';
-    ${'' /* src: url('/fonts/Bodoni-roman.ttf') format('truetype'); */}
     src: url('/fonts/Bodoni-11-Book.otf') format('opentype');
-    ${'' /* src: url('/fonts/Bodoni-11-Medium.otf') format('opentype'); */}
   }
 
   @font-face {
@@ -65,7 +63,6 @@ const globalStyles = css`
 export const SpanOrange = styled.span`
   color: ${theme.colors.orangeLetters};
   font-weight: bold;
-  font-family: 'Bodoni-italic';
   font-style: italic;
 `
 

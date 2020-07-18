@@ -121,7 +121,7 @@ const ImageAndText = ({
                 href='http://www.solopianoradio.com'
                 target='_blank'
                 rel='noopener noreferrer'>
-                Whispersings: Solo Piano Radio
+                Whisperings: Solo Piano Radio
               </RadioLink>
             </p>
           ) : null}

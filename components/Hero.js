@@ -17,7 +17,7 @@ const Title = styled.h1`
   margin: 75px 0 50px;
   color: ${theme.colors.greenLetters};
   font-size: 5em;
-  line-height: 0.6em;
+  line-height: 0.7em;
   letter-spacing: -2px;
 `
 
@@ -31,6 +31,7 @@ const Italics = styled(SpanOrange)`
   font-size: 0.4em;
   font-weight: 200;
   letter-spacing: 0px;
+  font-family: 'Bodoni-italic';
 `
 
 const Description = styled.p`

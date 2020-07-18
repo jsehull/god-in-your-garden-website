@@ -28,7 +28,6 @@ const ReviewCard = styled.div`
   width: 300px;
   background: ${theme.colors.white};
   text-align: center;
-  box-shadow: 3px 5px 10px 0px ${theme.colors.black};
   border-radius: 15px;
 `
 

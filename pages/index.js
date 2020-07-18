@@ -43,7 +43,7 @@ const index = () => {
         id='music'
         bg='#243354'
         color='#fff'
-        title='Solo Piano Album'
+        title='Solo piano album'
         src='/images/music/album-cover.jpeg'
         width='300px'
         alt='album cover'

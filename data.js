@@ -63,9 +63,10 @@ export const MusicLogoData = [
 export const ReviewData = [
   {
     id: 1,
-    name: 'Ryan & Kody',
-    img: '/images/reviews/ryan-kody.jpeg',
-    quote: ''
+    name: 'Jesse',
+    img: '/images/reviews/jesse.jpeg',
+    quote:
+      "Having already read this book myself, my wife and I are now going through it and discovering what pure intimacy with our God and one another looks like in our garden. The amount of freedom and power God created us to walk in is life changing. We bought a few extra to give away and only have one more left! It's time for you and those you care about to experience relationship with God the way He always intended for us."
   },
   {
     id: 2,
@@ -89,10 +90,9 @@ export const ReviewData = [
   },
   {
     id: 5,
-    name: 'Doug',
-    img: '/images/reviews/doug.jpg',
-    quote:
-      '(401 chars)Revival hyper-spiritual emergent life-changing dive in postmodern very theology bless his heart revelation good steward special music relational. Good steward theology revelation, devo life-changing super spiritual formation lostness pursuing catalyst testimony watered down volunteer small group. Brother brought it have your way atmosphere echo dive in, testimony fellowship of the world.'
+    name: 'Ryan',
+    img: '/images/reviews/ryan-kody.jpeg',
+    quote: ''
   },
   {
     id: 6,

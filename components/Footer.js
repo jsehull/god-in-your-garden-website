@@ -19,7 +19,7 @@ const GardenBox = styled.div`
 `
 
 const P = styled.p`
-  margin: 0 0 20px;
+  margin: 5px 0 10px;
 `
 
 const currentYear = new Date().getFullYear()
