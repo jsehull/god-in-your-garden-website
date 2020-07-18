@@ -43,10 +43,14 @@ const globalStyles = css`
   h1,
   h2,
   h3 {
-    font-family: 'Bodoni';
     color: ${theme.colors.greenLetters};
     text-align: center;
     font-weight: normal;
+  }
+
+  h1,
+  h2 {
+    font-family: 'Bodoni';
   }
 
   h2 {
