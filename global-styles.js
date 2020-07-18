@@ -16,6 +16,7 @@ const globalStyles = css`
       ${theme.colors.blueSky} 2%
     );
     color: ${theme.colors.black};
+    font-family: 'Inter', sans-serif;
   }
 
   @font-face {
