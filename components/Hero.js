@@ -17,7 +17,7 @@ const Title = styled.h1`
   margin: 75px 0 50px;
   color: ${theme.colors.greenLetters};
   font-size: 5em;
-  line-height: 0.5em;
+  line-height: 0.6em;
   letter-spacing: -2px;
 `
 

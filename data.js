@@ -90,7 +90,7 @@ export const ReviewData = [
   {
     id: 5,
     name: 'Doug',
-    img: '/images/reviews/doug.jpeg',
+    img: '/images/reviews/doug.jpg',
     quote:
       '(401 chars)Revival hyper-spiritual emergent life-changing dive in postmodern very theology bless his heart revelation good steward special music relational. Good steward theology revelation, devo life-changing super spiritual formation lostness pursuing catalyst testimony watered down volunteer small group. Brother brought it have your way atmosphere echo dive in, testimony fellowship of the world.'
   },

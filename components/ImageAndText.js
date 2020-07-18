@@ -51,7 +51,7 @@ const ImageBox = styled.div`
 const Image = styled.img`
   margin: 10px;
   width: ${props => props.width};
-  box-shadow: 5px 5px 20px 2px ${theme.colors.black};
+  box-shadow: 3px 3px 10px 0 ${theme.colors.black};
 `
 
 const TextBox = styled.div`
