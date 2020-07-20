@@ -91,7 +91,7 @@ export const ReviewData = [
   },
   {
     id: 5,
-    name: 'Ryan',
+    name: 'Ryan & Kody',
     img: '/images/reviews/ryan-kody.jpeg',
     quote: ''
   },
