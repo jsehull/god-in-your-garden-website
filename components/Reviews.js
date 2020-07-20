@@ -16,10 +16,21 @@ const Chair = styled.img`
   }
 `
 const Flex = styled.div`
+  margin: 0 auto;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column wrap;
+  justify-content: flex-start;
   align-items: center;
+
+  @media (min-width: 900px) {
+    width: 690px;
+    height: 2470px;
+  }
+
+  @media (min-width: 1100px) {
+    width: 1025px;
+    height: 1775px;
+  }
 `
 
 const ReviewCard = styled.div`

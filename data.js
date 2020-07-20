@@ -73,7 +73,8 @@ export const ReviewData = [
     name: 'Victoria',
     img: '/images/reviews/victoria.jpeg',
     quote:
-      'A childhood filled with abuse by my father gave me much hesitation to enter into a relationship with God, because I didn’t want another cold, harsh dictator “running my life.” I just couldn’t imagine what a loving Father is and how important I could be to him. Scott Hull’s book beautifully explains the truth that entirely transformed my sense of value and purpose here on earth. Whether you are simply considering a relationship with God or have known him for years and wish to grow closer to him, this book has refreshing, comforting, and honest answers to questions you might have been too afraid to ask. '
+      // 'A childhood filled with abuse by my father gave me much hesitation to enter into a relationship with God, because I didn’t want another cold, harsh dictator “running my life.” I just couldn’t imagine what a loving Father is and how important I could be to him. Scott Hull’s book beautifully explains the truth that entirely transformed my sense of value and purpose here on earth. Whether you are simply considering a relationship with God or have known him for years and wish to grow closer to him, this book has refreshing, comforting, and honest answers to questions you might have been too afraid to ask. '
+      'A childhood filled with abuse by my father gave me much hesitation to enter into a relationship with God, because I didn’t want another cold, harsh dictator “running my life.” I simply couldn’t imagine what a loving Father is and how important I could be to him. Scott Hull’s book beautifully explains the truth that entirely transformed my sense of value and purpose here on earth. I work with many clients who, like me, have also lacked a healthy father relationship and therefore struggle to trust or feel close to God; I keep extra copies of the book to share with them. Whether you are simply considering a relationship with God or have known him for years and wish to grow closer to him, this book has refreshing, comforting, and honest answers to questions you might have been too afraid to ask. '
   },
   {
     id: 3,
@@ -100,5 +101,12 @@ export const ReviewData = [
     img: '/images/reviews/brooke.jpeg',
     quote:
       'I’ve been shaped through the last 10 years by the revelation Scott carries from Heaven and this book is an incredible expression of that. It is an encouragement for all of us to live our lives empowered by the Truth that God is here and is doing life with us. His life is flowing through us to every corner of our Garden, to every person, every encounter, every circumstance.'
+  },
+  {
+    id: 7,
+    name: 'Doug',
+    img: '/images/reviews/doug.jpeg',
+    quote:
+      'Mr. Hull reminds us that God’s intent for our lives was never supposed to be a ‘here you go, have fun, and see you later’ experience for us. Rather it is a vast and endless relationship with a Father who delights so much in his children, that He tailored every aspect of our gardens in exquisite detail to meet all of our needs on every level - mind, body, soul, and spirit. I found these pages to be a breath of fresh air in the simple truth that God is not just ‘personable,’ He is relentlessly relational. This book brought much-needed water and light. It will now occupy a place on my shelf among the volumes I return to again and again in the experience of walking through my own garden growing.'
   }
 ]

@@ -43,9 +43,11 @@ const NavBar = styled.ul`
 
 const Li = styled.li`
   margin: 5px;
+  font-size: 0.9em;
 
   @media (min-width: 950px) {
     margin: 10px;
+    font-size: 1em;
   }
 `
 
