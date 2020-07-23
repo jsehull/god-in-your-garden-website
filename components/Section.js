@@ -6,11 +6,8 @@ const StyledSection = styled.section`
 
   h2,
   p {
-  color: ${props => props.color};
+    color: ${props => props.color};
   }
-  /* background: ${props => `${props.bg}`}; */
-  /* TODO bg for theme props */
-  /* TODO color IF THEME X */
 `
 
 const Container = styled.div`

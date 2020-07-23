@@ -59,7 +59,8 @@ const Order = () => {
             key={logo.id}
             href={logo.url}
             target='_blank'
-            rel='noopener noreferrer'>
+            rel='noopener noreferrer'
+          >
             <LogoBox>
               <Logo src={logo.img} alt={logo.company} />
             </LogoBox>

@@ -120,7 +120,8 @@ const ImageAndText = ({
               <RadioLink
                 href='http://www.solopianoradio.com'
                 target='_blank'
-                rel='noopener noreferrer'>
+                rel='noopener noreferrer'
+              >
                 Whisperings: Solo Piano Radio
               </RadioLink>
             </p>

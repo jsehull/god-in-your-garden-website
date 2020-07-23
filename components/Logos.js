@@ -45,7 +45,8 @@ const Logos = ({ type }) => {
             key={logo.id}
             href={logo.url}
             target='_blank'
-            rel='noopener noreferrer'>
+            rel='noopener noreferrer'
+          >
             <LogoBox type={type}>
               <Logo src={logo.img} alt={logo.company} />
             </LogoBox>
