@@ -36,10 +36,14 @@ const Flex = styled.div`
 const ReviewCard = styled.div`
   margin: 20px;
   padding: 30px 20px;
-  width: 300px;
+  width: 250px;
   background: ${theme.colors.white};
   text-align: center;
   border-radius: 15px;
+
+  @media (min-width: 350px) {
+    width: 300px;
+  }
 `
 
 const Photo = styled.img`
