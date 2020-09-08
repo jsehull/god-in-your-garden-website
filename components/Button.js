@@ -4,17 +4,18 @@ import theme from '../styles/theme'
 const StyledButton = styled.a`
   padding: 10px;
   background: ${theme.colors.white};
-  border: none;
+  border: 1px solid transparent;
   border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-  color: ${theme.colors.black};
+  color: ${theme.colors.bluepotDark};
 
   &:hover {
     cursor: pointer;
-    background: ${theme.colors.leafMedium};
-    color: ${theme.colors.yellow};
+    background: ${theme.colors.bluepotDark};
+    color: ${theme.colors.white};
+    border: 1px solid ${theme.colors.white};
   }
 `
 

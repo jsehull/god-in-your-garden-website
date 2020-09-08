@@ -43,15 +43,13 @@ const Li = styled.li`
   margin: 5px;
   font-size: 0.9em;
 
+  a:hover {
+    text-decoration: underline;
+  }
+
   @media (min-width: 950px) {
     margin: 10px;
     font-size: 1em;
-  }
-`
-
-const A = styled.a`
-  &:hover {
-    text-decoration: underline;
   }
 `
 
@@ -64,16 +62,18 @@ const Header = () => (
     </Link>
     <NavBar>
       <Li>
-        <A href='#order'>Order</A>
+        <a href='#order'>Order</a>
       </Li>
       <Li>
-        <A href='#author'>Author</A>
+        <a href='#author'>Author</a>
       </Li>
       <Li>
-        <A href='#music'>Music</A>
+        <a href='#reviews'>Reviews</a>
       </Li>
       <Li>
-        <A href='#reviews'>Reviews</A>
+        <Link href='/music'>
+          <a>Music</a>
+        </Link>
       </Li>
     </NavBar>
   </StyledHeader>

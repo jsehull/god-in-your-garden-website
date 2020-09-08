@@ -38,12 +38,12 @@ const index = () => {
         id='music'
         bg='#243354'
         color='#fff'
-        title='Solo piano album'
-        src='/images/music/album-cover.jpeg'
+        title='NEW album release'
+        src='/images/music/bt-front-cover.jpeg'
         width='300px'
-        alt='album cover'
-        p1='Scott has created an inspirational and reflective solo piano album that you may enjoy as a listening companion with God in Your Garden. Time to Listen is a collection of eight spontaneous and new songs he recorded as he listened to what God was stirring in his Spirit.'
-        p2='This seventy-minute album of piano music has been used by many to create a spiritual ambiance for home or work environments. The peaceful atmosphere it provides has also proven to be a comfort for quiet time, reading, relaxing, or sleeping. The hope is that Time to Listen will inspire you to greater wonder and creativity as you learn to enjoy doing life with God in your Garden.'
+        alt='Breaking Through cover'
+        p1='Breaking Through provides a great musical companion to God in Your Garden.'
+        p2='Scott recorded this new solo piano album with Jesus’ words in Matthew 11 as the setting.'
       />
       <Reviews />
     </Layout>
