@@ -1,7 +1,5 @@
 import Link from 'next/link'
 import styled from '@emotion/styled'
-import theme from '../theme'
-import Button from './Button'
 
 const StyledHeader = styled.header`
   margin: 0 auto;
@@ -57,19 +55,6 @@ const A = styled.a`
   }
 `
 
-const BuyNow = styled(Button)`
-  background: ${theme.colors.yellow};
-  padding: 8px;
-
-  @media (min-width: 350px) {
-    padding: 10px;
-  }
-
-  &:hover {
-    background: ${theme.colors.white};
-  }
-`
-
 const Header = () => (
   <StyledHeader>
     <Link href='/'>
@@ -90,11 +75,6 @@ const Header = () => (
       <Li>
         <A href='#reviews'>Reviews</A>
       </Li>
-      <BuyNow
-        text='buy now'
-        link='https://store.bookbaby.com/book/god-in-your-garden'
-        ext
-      />
     </NavBar>
   </StyledHeader>
 )

@@ -1,7 +1,6 @@
 import styled from '@emotion/styled'
-import theme from '../theme'
-import { SpanOrange } from '../global-styles'
-import Header from './Header'
+import theme from '../styles/theme'
+import { SpanOrange } from '../styles/global-styles'
 import Button from './Button'
 
 const StyledSection = styled.section`
@@ -54,7 +53,7 @@ const Garden = styled.img`
 const Hero = () => {
   return (
     <StyledSection bg={theme.colors.blueSky}>
-      <Header />
+      {/* <Header /> */}
       <Title>
         <God>God</God> <br />
         <Italics>in your</Italics> <br />

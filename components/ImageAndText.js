@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import theme from '../theme'
+import theme from '../styles/theme'
 import Section from './Section'
 import Logos from './Logos'
 import { SRLWrapper } from 'simple-react-lightbox'

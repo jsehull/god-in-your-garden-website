@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
-import theme from '../theme'
-import { SpanOrange } from '../global-styles'
+import theme from '../styles/theme'
+import { SpanOrange } from '../styles/global-styles'
 
 const StyledSection = styled.section`
   margin-top: -30px;

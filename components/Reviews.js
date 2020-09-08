@@ -1,6 +1,6 @@
 import Section from './Section'
 import styled from '@emotion/styled'
-import theme from '../theme'
+import theme from '../styles/theme'
 import { ReviewData } from '../data'
 
 const Top = styled.div`

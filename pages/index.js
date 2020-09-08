@@ -1,22 +1,13 @@
-import Head from 'next/head'
+import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import ImageAndText from '../components/ImageAndText'
 import Who from '../components/Who'
 import Order from '../components/Order'
 import Reviews from '../components/Reviews'
-import Footer from '../components/Footer'
 
 const index = () => {
   return (
-    <>
-      <Head>
-        <title>God in your Garden by Scott Hull</title>
-        <link rel='icon' href='/favicon.ico' />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'
-          rel='stylesheet'
-        />
-      </Head>
+    <Layout>
       <Hero />
       <ImageAndText
         even
@@ -55,8 +46,7 @@ const index = () => {
         p2='This seventy-minute album of piano music has been used by many to create a spiritual ambiance for home or work environments. The peaceful atmosphere it provides has also proven to be a comfort for quiet time, reading, relaxing, or sleeping. The hope is that Time to Listen will inspire you to greater wonder and creativity as you learn to enjoy doing life with God in your Garden.'
       />
       <Reviews />
-      <Footer />
-    </>
+    </Layout>
   )
 }
 

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import theme from '../theme'
+import theme from '../styles/theme'
 
 const StyledFooter = styled.footer`
   padding-top: 50px;

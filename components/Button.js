@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import theme from '../theme'
+import theme from '../styles/theme'
 
 const StyledButton = styled.a`
   padding: 10px;

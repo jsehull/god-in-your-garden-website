@@ -1,6 +1,6 @@
 import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
-import theme from './theme'
+import theme from '../styles/theme'
 
 const globalStyles = css`
   * {
