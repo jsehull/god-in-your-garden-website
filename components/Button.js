@@ -4,7 +4,6 @@ import theme from '../styles/theme'
 const StyledButton = styled.a`
   padding: 10px;
   background: ${theme.colors.white};
-  border: 1px solid transparent;
   border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
@@ -13,9 +12,8 @@ const StyledButton = styled.a`
 
   &:hover {
     cursor: pointer;
-    background: ${theme.colors.bluepotDark};
+    background: ${theme.colors.greenLetters};
     color: ${theme.colors.white};
-    border: 1px solid ${theme.colors.white};
   }
 `
 

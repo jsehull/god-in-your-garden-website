@@ -1,5 +1,7 @@
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import styled from '@emotion/styled'
+import Button from '../components/Button'
 
 const StyledHeader = styled.header`
   margin: 0 auto;
@@ -53,30 +55,63 @@ const Li = styled.li`
   }
 `
 
-const Header = () => (
-  <StyledHeader>
-    <Link href='/'>
-      <NavLogo>
-        <img src='/images/art/tree.jpeg' alt='logo' />
-      </NavLogo>
-    </Link>
-    <NavBar>
-      <Li>
-        <a href='#order'>Order</a>
-      </Li>
-      <Li>
-        <a href='#author'>Author</a>
-      </Li>
-      <Li>
-        <a href='#reviews'>Reviews</a>
-      </Li>
-      <Li>
-        <Link href='/music'>
-          <a>Music</a>
-        </Link>
-      </Li>
-    </NavBar>
-  </StyledHeader>
-)
+const NavButton = styled(Button)`
+  padding: 8px;
+  background: red;
+
+  @media (min-width: 350px) {
+    padding: 10px;
+  }
+`
+
+const Header = () => {
+  const [path, setPath] = useState('/')
+  const pathName = typeof window !== 'undefined' && window.location.pathname
+
+  useEffect(() => {
+    if (pathName === '/music') {
+      setPath('/music')
+    } else if (pathName === '/') {
+      setPath('/')
+    }
+  }, [setPath])
+
+  return (
+    <StyledHeader>
+      <Link href='/'>
+        <NavLogo>
+          <img src='/images/art/tree.jpeg' alt='logo' />
+        </NavLogo>
+      </Link>
+      {path === '/' ? (
+        <NavBar>
+          <Li>
+            <a href='#order'>Order</a>
+          </Li>
+          <Li>
+            <a href='#author'>Author</a>
+          </Li>
+          <Li>
+            <a href='#reviews'>Reviews</a>
+          </Li>
+          <NavButton text='music' link='/music' />
+        </NavBar>
+      ) : (
+        <NavBar>
+          <Li>
+            <a href='#bt'>Order</a>
+          </Li>
+          <Li>
+            <a href='#ttl'>Albums</a>
+          </Li>
+          <Li>
+            <a href='#radio'>Radio</a>
+          </Li>
+          <NavButton text='book' link='/' />
+        </NavBar>
+      )}
+    </StyledHeader>
+  )
+}
 
 export default Header
