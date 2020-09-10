@@ -55,15 +55,6 @@ const Li = styled.li`
   }
 `
 
-const NavButton = styled(Button)`
-  padding: 8px;
-  background: red;
-
-  @media (min-width: 350px) {
-    padding: 10px;
-  }
-`
-
 const Header = () => {
   const [path, setPath] = useState('/')
   const pathName = typeof window !== 'undefined' && window.location.pathname
@@ -94,7 +85,7 @@ const Header = () => {
           <Li>
             <a href='#reviews'>Reviews</a>
           </Li>
-          <NavButton text='music' link='/music' />
+          <Button text='music' link='/music' />
         </NavBar>
       ) : (
         <NavBar>
@@ -107,7 +98,7 @@ const Header = () => {
           <Li>
             <a href='#radio'>Radio</a>
           </Li>
-          <NavButton text='book' link='/' />
+          <Button text='book' link='/' />
         </NavBar>
       )}
     </StyledHeader>

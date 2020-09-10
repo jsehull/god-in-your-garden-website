@@ -4,6 +4,7 @@ import ImageAndText from '../components/ImageAndText'
 import Who from '../components/Who'
 import Order from '../components/Order'
 import Reviews from '../components/Reviews'
+import CenterCol from '../components/CenterCol'
 
 const index = () => {
   return (
@@ -34,16 +35,17 @@ const index = () => {
         p1='Scott and Susan Hull have been walking with God in Christian ministry for nearly four decades. They desire for people to recognize God’s voice for themselves and to experience their own unique relationship with Him. Their heart has been to see God’s sons and daughters raised (not duplicated), blessed (not used), and released (not enlisted).'
         p2='As a pastor, brother, and friend, Scott has served in Texas, Pennsylvania, California, Wisconsin, and Connecticut. Scott and Susan currently reside in North Carolina and they have 3 married children with 7 (so far) grandchildren.'
       />
-      <ImageAndText
+      <CenterCol
         id='music'
         bg='#243354'
         color='#fff'
         title='NEW album release'
-        src='/images/music/bt-front-cover.jpeg'
+        src='/images/music/multi-cd.png'
         width='300px'
-        alt='Breaking Through cover'
-        p1='Breaking Through provides a great musical companion to God in Your Garden.'
-        p2='Scott recorded this new solo piano album with Jesus’ words in Matthew 11 as the setting.'
+        alt="Scott's solo piano albums"
+        p='Multiple solo piano albums available on '
+        href='/music'
+        aText="Scott's music page"
       />
       <Reviews />
     </Layout>
