@@ -31,7 +31,7 @@ export const BookLogoData = [
   }
 ]
 
-export const MusicLogoData = [
+export const TTLLogoData = [
   {
     id: 1,
     company: 'Apple',
@@ -60,6 +60,35 @@ export const MusicLogoData = [
   }
 ]
 
+export const BTLogoData = [
+  {
+    id: 1,
+    company: 'Apple',
+    url: 'https://music.apple.com/us/album/breaking-through/1531260038',
+    img: '/images/logos/apple.png'
+  }
+  // {
+  //   id: 2,
+  //   company: 'Amazon',
+  //   url:
+  //     '',
+  //   img: '/images/logos/amazon.jpg'
+  // },
+  // {
+  //   id: 3,
+  //   company: 'Google Play',
+  //   url:
+  //     '',
+  //   img: '/images/logos/google-play.png'
+  // },
+  // {
+  //   id: 4,
+  //   company: 'Spotify',
+  //   url: '',
+  //   img: '/images/logos/spotify.png'
+  // }
+]
+
 export const ReviewData = [
   {
     id: 1,
@@ -73,7 +102,6 @@ export const ReviewData = [
     name: 'Victoria',
     img: '/images/reviews/victoria.jpeg',
     quote:
-      // 'A childhood filled with abuse by my father gave me much hesitation to enter into a relationship with God, because I didn’t want another cold, harsh dictator “running my life.” I just couldn’t imagine what a loving Father is and how important I could be to him. Scott Hull’s book beautifully explains the truth that entirely transformed my sense of value and purpose here on earth. Whether you are simply considering a relationship with God or have known him for years and wish to grow closer to him, this book has refreshing, comforting, and honest answers to questions you might have been too afraid to ask. '
       'A childhood filled with abuse by my father gave me much hesitation to enter into a relationship with God, because I didn’t want another cold, harsh dictator “running my life.” I simply couldn’t imagine what a loving Father is and how important I could be to him. Scott Hull’s book beautifully explains the truth that entirely transformed my sense of value and purpose here on earth. I work with many clients who, like me, have also lacked a healthy father relationship and therefore struggle to trust or feel close to God; I keep extra copies of the book to share with them. Whether you are simply considering a relationship with God or have known him for years and wish to grow closer to him, this book has refreshing, comforting, and honest answers to questions you might have been too afraid to ask. '
   },
   {
