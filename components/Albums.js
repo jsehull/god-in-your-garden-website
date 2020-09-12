@@ -37,8 +37,8 @@ const ImageBox = styled.div`
 `
 
 const Image = styled.img`
-  /* margin: 10px; */
-  width: 300px;
+  max-width: 400px;
+  width: 100%;
   box-shadow: 3px 3px 10px 0 ${theme.colors.black};
 `
 
@@ -60,17 +60,22 @@ const TextBox = styled.div`
   }
 `
 
-const Album = ({ id, title, src, alt, p1, p2 }) => {
+const Italic = styled.p`
+  font-style: italic;
+`
+
+const Album = ({ id, title, src, alt, p1, p2, p3 }) => {
   return (
     <>
-      <Flex>
+      <Flex id={id}>
         <ImageBox>
           <Image src={src} alt={alt} />
         </ImageBox>
         <TextBox>
           <h3>{title}</h3>
           <p>{p1}</p>
-          {p2 ? <p>{p2}</p> : null}
+          {id === 'breaking-through' ? <Italic>{p2}</Italic> : <p>{p2}</p>}
+          {p3 ? <p>{p3}</p> : null}
           <Logos type={id} />
         </TextBox>
       </Flex>

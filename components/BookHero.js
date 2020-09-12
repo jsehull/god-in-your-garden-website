@@ -50,10 +50,9 @@ const Garden = styled.img`
   max-width: 1400px;
 `
 
-const Hero = () => {
+const BookHero = () => {
   return (
     <StyledSection bg={theme.colors.blueSky}>
-      {/* <Header /> */}
       <Title>
         <God>God</God> <br />
         <Italics>in your</Italics> <br />
@@ -71,4 +70,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default BookHero

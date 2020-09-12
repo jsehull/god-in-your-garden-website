@@ -5,21 +5,16 @@ import Button from '../components/Button'
 
 const StyledHeader = styled.header`
   margin: 0 auto;
+  padding: 1em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1280px;
-
-  @media (min-width: 950px) {
-    padding: 10px 25px;
-    flex-direction: row;
-  }
 `
 
 const NavLogo = styled.a`
-  margin: 10px 0;
   font-size: 1.5em;
   font-weight: bold;
 
@@ -49,9 +44,9 @@ const Li = styled.li`
     text-decoration: underline;
   }
 
-  @media (min-width: 950px) {
-    margin: 10px;
+  @media (min-width: 374px) {
     font-size: 1em;
+    margin: 10px;
   }
 `
 
@@ -90,10 +85,10 @@ const Header = () => {
       ) : (
         <NavBar>
           <Li>
-            <a href='#bt'>Order</a>
+            <a href='#breaking-through'>Order</a>
           </Li>
           <Li>
-            <a href='#ttl'>Albums</a>
+            <a href='#albums'>Albums</a>
           </Li>
           <Li>
             <a href='#radio'>Radio</a>

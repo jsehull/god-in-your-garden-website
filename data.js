@@ -66,27 +66,26 @@ export const BTLogoData = [
     company: 'Apple',
     url: 'https://music.apple.com/us/album/breaking-through/1531260038',
     img: '/images/logos/apple.png'
+  },
+  {
+    id: 2,
+    company: 'Amazon',
+    url: 'https://www.amazon.com/gp/product/B08HS9LBN1',
+    img: '/images/logos/amazon.jpg'
+  },
+  {
+    id: 3,
+    company: 'Google Play',
+    url:
+      'https://play.google.com/store/music/album/Scott_Hull_Breaking_Through?id=Bs3qpyer4kiiije3yo7pmohdnj4&hl=en_US',
+    img: '/images/logos/google-play.png'
+  },
+  {
+    id: 4,
+    company: 'Spotify',
+    url: 'https://open.spotify.com/album/01xhPVXp17OSZt3Qd5u7Ez',
+    img: '/images/logos/spotify.png'
   }
-  // {
-  //   id: 2,
-  //   company: 'Amazon',
-  //   url:
-  //     '',
-  //   img: '/images/logos/amazon.jpg'
-  // },
-  // {
-  //   id: 3,
-  //   company: 'Google Play',
-  //   url:
-  //     '',
-  //   img: '/images/logos/google-play.png'
-  // },
-  // {
-  //   id: 4,
-  //   company: 'Spotify',
-  //   url: '',
-  //   img: '/images/logos/spotify.png'
-  // }
 ]
 
 export const ReviewData = [

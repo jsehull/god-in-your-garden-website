@@ -1,5 +1,5 @@
 import Layout from '../components/Layout'
-import Hero from '../components/Hero'
+import BookHero from '../components/BookHero'
 import ImageAndText from '../components/ImageAndText'
 import Who from '../components/Who'
 import Order from '../components/Order'
@@ -9,7 +9,7 @@ import CenterCol from '../components/CenterCol'
 const index = () => {
   return (
     <Layout>
-      <Hero />
+      <BookHero />
       <ImageAndText
         even
         id='book'
@@ -39,13 +39,13 @@ const index = () => {
         id='music'
         bg='#243354'
         color='#fff'
-        title='NEW album release'
+        title='Solo piano albums'
         src='/images/music/multi-cd.png'
         width='300px'
         alt="Scott's solo piano albums"
-        p='Multiple solo piano albums available on '
+        p='Scott has beautifully recorded inspirational, easy-listening solo piano albums that you may enjoy as companions with God in Your Garden. Visit '
         href='/music'
-        aText="Scott's music page"
+        aText="Scott's music page."
       />
       <Reviews />
     </Layout>

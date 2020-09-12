@@ -10,6 +10,11 @@ const Center = styled.section`
     width: ${props => props.width};
   }
 
+  p {
+    margin: 1em auto;
+    max-width: 700px;
+  }
+
   a {
     color: ${theme.colors.orangeLetters};
     font-weight: bold;
