@@ -13,7 +13,6 @@ const StyledSection = styled.section`
     ${theme.colors.bluepotDark};
   background-size: cover;
   background-position: 50% 50%;
-  color: ${theme.colors.white};
   text-align: center;
 
   @media (min-width: 1023px) {
@@ -22,20 +21,23 @@ const StyledSection = styled.section`
 `
 const Title = styled.h1`
   margin: 0;
-  color: ${theme.colors.white};
+  font-family: 'Permanent Marker', cursive;
   font-size: 4em;
+  color: ${theme.colors.blueBT};
   line-height: 1.1em;
-  text-shadow: 4px 3px 10px #000;
+  text-shadow: 5px 3px 10px #000;
 
   @media (min-width: 900px) {
-    font-size: 5em;
+    font-size: 6em;
   }
 `
 
 const OutNow = styled.p`
-  width: 260px;
+  width: 275px;
+  color: ${theme.colors.greenLetters};
   font-size: 1.5em;
-  text-shadow: 4px 3px 10px #000;
+  font-weight: bold;
+  text-shadow: 2px 1px 1px ${theme.colors.white};
 
   @media (min-width: 575px) {
     width: 100%;
@@ -77,7 +79,7 @@ const MusicHero = () => {
   return (
     <StyledSection>
       <Title>Breaking Through</Title>
-      <OutNow>NEW ALBUM RELEASE - now available</OutNow>
+      <OutNow>NEW ORIGINAL ALBUM - now available</OutNow>
       <Covers>
         <img src='/images/music/bt-front-cover.jpeg' alt='album cover front' />
         <img src='/images/music/bt-back-cover.jpeg' alt='album cover back' />

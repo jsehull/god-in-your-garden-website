@@ -9,6 +9,7 @@ module.exports = {
     blueRoom: '#b2e6e8',
     bluepotLight: '#4b5cb3',
     bluepotDark: '#243354',
+    blueBT: '#caf0fe',
     brownLight: '#9b6d33',
     brownMedium: '#755a40',
     brownDark: '#473e39',

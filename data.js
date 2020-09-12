@@ -41,8 +41,7 @@ export const TTLLogoData = [
   {
     id: 2,
     company: 'Amazon',
-    url:
-      'https://www.amazon.com/Time-Listen-Scott-Hull/dp/B0019D2VWW/ref=ntt_mus_ep_dpi_1',
+    url: 'https://www.amazon.com/Time-Listen-Scott-Hull/dp/B0019D2VWW',
     img: '/images/logos/amazon.jpg'
   },
   {
