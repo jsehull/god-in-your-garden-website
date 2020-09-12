@@ -25,7 +25,7 @@ const music = () => {
           src='/images/music/ttl-front-cover.jpeg'
           alt='album cover'
           p1='Time to Listen is a collection of eight spontaneous and new songs Scott recorded as he listened to what God was stirring in his Spirit.'
-          p2='This seventy-minute album of piano music has been used by many to create a spiritual ambiance for home or work environments. The peaceful atmosphere it provides has also proven to be a comfort for quiet time, reading, relaxing, or sleeping. The hope is that Time to Listen will inspire you to greater wonder and creativity as you learn to enjoy doing life with God in your Garden.'
+          p2='This seventy-minute album of piano music has been used by many to create a spiritual ambiance for home or work environments. The peaceful atmosphere it provides has also proven to be a comfort for quiet time, reading, relaxing, or sleeping. The hope is that Time to Listen will inspire you to greater wonder and creativity as you learn to enjoy doing life with God in Your Garden.'
         />
       </Section>
       <CenterCol

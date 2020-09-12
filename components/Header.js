@@ -37,7 +37,7 @@ const NavBar = styled.ul`
 `
 
 const Li = styled.li`
-  margin: 5px;
+  margin: 3px;
   font-size: 0.9em;
 
   a:hover {

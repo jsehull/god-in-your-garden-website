@@ -18,7 +18,7 @@ const index = () => {
         src='/images/art/front-cover.jpeg'
         width='200px'
         alt='God in Your Garden'
-        p1='God in your Garden reveals the opportunity of a lifetime: God is eagerly waiting to live your life together with you—right where you are! You can know and experience God in the unique setting where you live, in a way few ever imagined possible.'
+        p1='God in Your Garden reveals the opportunity of a lifetime: God is eagerly waiting to live your life together with you—right where you are! You can know and experience God in the unique setting where you live, in a way few ever imagined possible.'
         p2=' Exploring various scenes from the original “Garden of Eden” story, this book brings to life your individual living-space God designed for you and where He chooses to do life together with you.'
       />
       <Who />
