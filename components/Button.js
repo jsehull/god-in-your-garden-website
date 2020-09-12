@@ -8,7 +8,7 @@ const StyledButton = styled.a`
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-  color: ${theme.colors.bluepotDark};
+  color: ${theme.colors.greenLetters};
 
   &:hover {
     cursor: pointer;

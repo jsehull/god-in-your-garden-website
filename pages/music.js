@@ -6,7 +6,7 @@ import MusicHero from '../components/MusicHero'
 
 const music = () => {
   return (
-    <Layout pageTitle='Original Solo Piano Music - Scott Hull'>
+    <Layout pageTitle='Solo Piano Music - Scott Hull'>
       <MusicHero />
       <Section id='albums' bg='#243354' color='#fff'>
         <h2>Solo Piano Albums</h2>
@@ -36,7 +36,7 @@ const music = () => {
         src='/images/music/whisperings-radio.gif'
         width='450px'
         alt='Whisperings Solo Piano Radio'
-        p='Scott is also one of many artists featured on '
+        p='Scott is also one of the many fine artists featured on '
         href='https://www.solopianoradio.com/'
         aText='Whisperings: Solo Piano Radio'
       />

@@ -38,7 +38,15 @@ const CenterCol = ({
     <Section id={id} bg={bg} color={color}>
       <Center>
         <h2>{title}</h2>
-        <img src={src} width={width} alt={alt} />
+        {id === 'radio' ? (
+          <a href={href} target='_blank' rel='noopener noreferrer'>
+            <img src={src} width={width} alt={alt} />
+          </a>
+        ) : (
+          <a href={href}>
+            <img src={src} width={width} alt={alt} />
+          </a>
+        )}
         <p>
           {p}
           {id === 'radio' ? (
