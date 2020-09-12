@@ -25,7 +25,7 @@ const Title = styled.h1`
   font-size: 4em;
   color: ${theme.colors.blueBT};
   line-height: 1.1em;
-  text-shadow: 5px 3px 10px #000;
+  text-shadow: 5px 3px 5px #000;
 
   @media (min-width: 900px) {
     font-size: 6em;
@@ -34,10 +34,10 @@ const Title = styled.h1`
 
 const OutNow = styled.p`
   width: 275px;
-  color: ${theme.colors.greenLetters};
+  color: ${theme.colors.white};
   font-size: 1.5em;
   font-weight: bold;
-  text-shadow: 2px 1px 1px ${theme.colors.white};
+  text-shadow: 2px 1px 5px #000;
 
   @media (min-width: 575px) {
     width: 100%;

@@ -6,7 +6,7 @@ import MusicHero from '../components/MusicHero'
 
 const music = () => {
   return (
-    <Layout pageTitle='Solo Piano Music - Scott Hull'>
+    <Layout pageTitle='Original Solo Piano Music - Scott Hull'>
       <MusicHero />
       <Section id='albums' bg='#243354' color='#fff'>
         <h2>Solo Piano Albums</h2>
