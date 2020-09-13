@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
-import theme from '../theme'
+import theme from '../styles/theme'
 import Section from './Section'
-import Logos from './Logos'
+import Logos from '../components/Logos'
 import { SRLWrapper } from 'simple-react-lightbox'
 
 const options = {
@@ -65,13 +65,6 @@ const TextBox = styled.div`
   }
 `
 
-const RadioLink = styled.a`
-  margin-left: 5px;
-  color: ${theme.colors.orangeLetters};
-  font-weight: bold;
-  text-decoration: underline;
-`
-
 const ImageAndText = ({
   id,
   bg,
@@ -113,20 +106,8 @@ const ImageAndText = ({
         </ImageBox>
         <TextBox even={even} reverse={reverse}>
           <p>{p1}</p>
-          <p>{p2}</p>
-          {id === 'music' ? (
-            <p>
-              Scott is also one of the many artists featured on
-              <RadioLink
-                href='http://www.solopianoradio.com'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                Whisperings: Solo Piano Radio
-              </RadioLink>
-            </p>
-          ) : null}
-          {id === 'music' ? <Logos type={id} /> : null}
+          {p2 ? <p>{p2}</p> : null}
+          {id === 'albums' ? <Logos type={id} /> : null}
         </TextBox>
       </Flex>
     </Section>

@@ -12,7 +12,7 @@ const StyledSection = styled.section`
 
 const Container = styled.div`
   margin: 0 auto;
-  padding: 50px 15px;
+  padding: 3em 1em;
   max-width: 1280px;
 `
 

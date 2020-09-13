@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
-import theme from '../theme'
-import { SpanOrange } from '../global-styles'
+import theme from '../styles/theme'
+import { SpanOrange } from '../styles/global-styles'
 
 const StyledSection = styled.section`
   margin-top: -30px;
@@ -46,7 +46,7 @@ const Who = () => {
       <Container>
         <Title>Who should read this?</Title>
         <Text>
-          “<SpanOrange>God in your Garden</SpanOrange> is for anyone wanting to
+          “<SpanOrange>God in Your Garden</SpanOrange> is for anyone wanting to
           enjoy a raw, real-time, organic, and dynamic relationship with God. It
           is rooted in Christian truth, but it is not just for Christian
           readers.

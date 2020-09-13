@@ -1,20 +1,19 @@
 import styled from '@emotion/styled'
-import theme from '../theme'
+import theme from '../styles/theme'
 
 const StyledButton = styled.a`
   padding: 10px;
   background: ${theme.colors.white};
-  border: none;
   border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-  color: ${theme.colors.black};
+  color: ${theme.colors.greenLetters};
 
   &:hover {
     cursor: pointer;
-    background: ${theme.colors.leafMedium};
-    color: ${theme.colors.yellow};
+    background: ${theme.colors.greenLetters};
+    color: ${theme.colors.white};
   }
 `
 

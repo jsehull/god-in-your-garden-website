@@ -1,6 +1,6 @@
 import Section from '../components/Section'
 import styled from '@emotion/styled'
-import theme from '../theme'
+import theme from '../styles/theme'
 import Logos from '../components/Logos'
 import { BookLogoData } from '../data'
 

@@ -1,11 +1,16 @@
 import styled from '@emotion/styled'
-import { BookLogoData, MusicLogoData } from '../data'
+import { BookLogoData, BTLogoData, TTLLogoData } from '../data'
 
 const Flex = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 950px) {
+    justify-content: ${props =>
+      props.type !== 'book' ? 'flex-start' : 'center'};
+  }
 `
 
 const A = styled.a`
@@ -22,7 +27,7 @@ const A = styled.a`
 const LogoBox = styled.div`
   display: flex;
   align-items: center;
-  width: ${props => (props.type === 'music' ? '125px' : '150px')};
+  width: ${props => (props.type === 'book' ? '150px' : '125px')};
   height: 60px;
   background: #fff;
   border-radius: 5px;
@@ -35,11 +40,18 @@ const Logo = styled.img`
 
 const Logos = ({ type }) => {
   let data
-  type === 'music' ? (data = MusicLogoData) : (data = BookLogoData)
+
+  if (type === 'breaking-through') {
+    data = BTLogoData
+  } else if (type === 'time-to-listen') {
+    data = TTLLogoData
+  } else {
+    data = BookLogoData
+  }
 
   return (
     <>
-      <Flex>
+      <Flex type={type}>
         {data.map(logo => (
           <A
             key={logo.id}
