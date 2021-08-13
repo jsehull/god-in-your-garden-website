@@ -49,7 +49,7 @@ export const TTLLogoData = [
     company: 'YouTube Music',
     url:
       'https://music.youtube.com/playlist?list=OLAK5uy_lsV3v3EaZwjyaxZhNng5FCl-9mzy1A2bE',
-    img: '/images/logos/google-play.png'
+    img: '/images/logos/youtube-music.jpeg'
   },
   {
     id: 4,
@@ -77,7 +77,7 @@ export const BTLogoData = [
     company: 'YouTube Music',
     url:
       'https://music.youtube.com/playlist?list=OLAK5uy_nTmfGCxPMdCrHxNb0sYQ65X-sem8p5M4Q',
-    img: '/images/logos/google-play.png'
+    img: '/images/logos/youtube-music.jpeg'
   },
   {
     id: 4,
@@ -106,7 +106,7 @@ export const OFGLogoData = [
     company: 'YouTube Music',
     url:
       'https://music.youtube.com/playlist?list=OLAK5uy_kmjA5V_4Lw96MfhIK1D8xSgZerLpowQng',
-    img: '/images/logos/google-play.png'
+    img: '/images/logos/youtube-music.jpeg'
   },
   {
     id: 4,
