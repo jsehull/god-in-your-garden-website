@@ -85,7 +85,7 @@ const Header = () => {
       ) : (
         <NavBar>
           <Li>
-            <a href='#breaking-through'>Order</a>
+            <a href='#the-once-and-future-garden'>Order</a>
           </Li>
           <Li>
             <a href='#albums'>Albums</a>

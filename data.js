@@ -46,9 +46,9 @@ export const TTLLogoData = [
   },
   {
     id: 3,
-    company: 'Google Play',
+    company: 'YouTube Music',
     url:
-      'https://play.google.com/store/music/album/Scott_Hull_Time_to_Listen?id=Buypdb3uenktvzmnbn4bvp4wgzm&hl=en_US',
+      'https://music.youtube.com/playlist?list=OLAK5uy_lsV3v3EaZwjyaxZhNng5FCl-9mzy1A2bE',
     img: '/images/logos/google-play.png'
   },
   {
@@ -74,15 +74,44 @@ export const BTLogoData = [
   },
   {
     id: 3,
-    company: 'Google Play',
+    company: 'YouTube Music',
     url:
-      'https://play.google.com/store/music/album/Scott_Hull_Breaking_Through?id=Bs3qpyer4kiiije3yo7pmohdnj4&hl=en_US',
+      'https://music.youtube.com/playlist?list=OLAK5uy_nTmfGCxPMdCrHxNb0sYQ65X-sem8p5M4Q',
     img: '/images/logos/google-play.png'
   },
   {
     id: 4,
     company: 'Spotify',
     url: 'https://open.spotify.com/album/01xhPVXp17OSZt3Qd5u7Ez',
+    img: '/images/logos/spotify.png'
+  }
+]
+
+export const OFGLogoData = [
+  {
+    id: 1,
+    company: 'Apple',
+    url:
+      'https://music.apple.com/us/album/the-once-and-future-garden/1580693554',
+    img: '/images/logos/apple.png'
+  },
+  {
+    id: 2,
+    company: 'Amazon',
+    url: 'https://www.amazon.com/gp/product/B09CCV52QJ',
+    img: '/images/logos/amazon.jpg'
+  },
+  {
+    id: 3,
+    company: 'YouTube Music',
+    url:
+      'https://music.youtube.com/playlist?list=OLAK5uy_kmjA5V_4Lw96MfhIK1D8xSgZerLpowQng',
+    img: '/images/logos/google-play.png'
+  },
+  {
+    id: 4,
+    company: 'Spotify',
+    url: 'https://open.spotify.com/album/0iD6IQxtHj24aWpFkmCk68',
     img: '/images/logos/spotify.png'
   }
 ]

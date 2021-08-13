@@ -21,6 +21,8 @@ module.exports = {
     leafMedium: '#56c035',
     leafDark: '#4aa53a',
     leafPea: '#81cd29',
-    leafYellow: '#9fd625'
+    leafYellow: '#9fd625',
+    OFGblack: '#202020',
+    OFGblue: '#6afae9'
   }
 }

@@ -11,6 +11,14 @@ const music = () => {
       <Section id='albums' bg='#243354' color='#fff'>
         <h2>Solo Piano Albums</h2>
         <Album
+          id='the-once-and-future-garden'
+          title='The Once and Future Garden'
+          src='/images/music/ofg-front-cover.jpeg'
+          alt='album cover'
+          p1='Inspiration for these songs came from the Creation Story in the first three chapters of Genesis.'
+          p2='In grateful memory of Linda Sue. I love you, Mom!'
+        />
+        <Album
           id='breaking-through'
           title='Breaking Through'
           src='/images/music/bt-front-cover.jpeg'

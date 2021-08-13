@@ -1,3 +1,5 @@
+import styled from '@emotion/styled'
+import theme from '../styles/theme'
 import Layout from '../components/Layout'
 import BookHero from '../components/BookHero'
 import ImageAndText from '../components/ImageAndText'
@@ -6,9 +8,22 @@ import Order from '../components/Order'
 import Reviews from '../components/Reviews'
 import CenterCol from '../components/CenterCol'
 
+const Banner = styled.p`
+  margin: 0;
+  padding: 10px 0;
+  background: #fff;
+  color: #202020;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+`
+
 const index = () => {
   return (
     <Layout>
+      <a href='/music'>
+        <Banner>GET NEW ALBUM</Banner>
+      </a>
       <BookHero />
       <ImageAndText
         even

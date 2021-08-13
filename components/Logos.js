@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { BookLogoData, BTLogoData, TTLLogoData } from '../data'
+import { BookLogoData, OFGLogoData, BTLogoData, TTLLogoData } from '../data'
 
 const Flex = styled.div`
   display: flex;
@@ -41,7 +41,9 @@ const Logo = styled.img`
 const Logos = ({ type }) => {
   let data
 
-  if (type === 'breaking-through') {
+  if (type === 'the-once-and-future-garden') {
+    data = OFGLogoData
+  } else if (type === 'breaking-through') {
     data = BTLogoData
   } else if (type === 'time-to-listen') {
     data = TTLLogoData

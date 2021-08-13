@@ -3,29 +3,27 @@ import theme from '../styles/theme'
 
 const StyledSection = styled.section`
   margin: 0 auto;
-  padding: 3em 1em 4em;
+  padding: 1em 1em 0;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background: no-repeat url('/images/music/bt-bg.jpeg'),
-    ${theme.colors.bluepotDark};
-  background-size: cover;
-  background-position: 50% 50%;
+  background: ${theme.colors.blueSky};
   text-align: center;
 
   @media (min-width: 1023px) {
-    padding: 8em 1em 9em;
+    padding-top: 5em;
   }
 `
+
 const Title = styled.h1`
   margin: 0;
-  font-family: 'Permanent Marker', cursive;
+  font-family: Bodoni;
   font-size: 4em;
-  color: ${theme.colors.blueBT};
+  font-weight: bold;
+  color: ${theme.colors.greenLetters};
   line-height: 1.1em;
-  text-shadow: 5px 3px 5px #000;
 
   @media (min-width: 900px) {
     font-size: 6em;
@@ -33,15 +31,17 @@ const Title = styled.h1`
 `
 
 const OutNow = styled.p`
-  width: 275px;
-  color: ${theme.colors.white};
-  font-size: 1.5em;
+  padding: 10px;
+  max-width: 305px;
+  color: ${theme.colors.OFGblack};
+  background: ${theme.colors.white};
+  font-size: 1.3em;
   font-weight: bold;
-  text-shadow: 2px 1px 5px #000;
 
   @media (min-width: 575px) {
+    padding: 15px;
     width: 100%;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 `
 
@@ -75,15 +75,23 @@ const Covers = styled.div`
   }
 `
 
+const Tree = styled.img`
+  width: 100px;
+  margin-top: 50px;
+`
+
 const MusicHero = () => {
   return (
     <StyledSection>
-      <Title>Breaking Through</Title>
-      <OutNow>NEW ORIGINAL ALBUM - now available</OutNow>
+      <Title>The Once and Future Garden</Title>
+      <a href='#the-once-and-future-garden'>
+        <OutNow>NEW ORIGINAL ALBUM</OutNow>
+      </a>
       <Covers>
-        <img src='/images/music/bt-front-cover.jpeg' alt='album cover front' />
-        <img src='/images/music/bt-back-cover.jpeg' alt='album cover back' />
+        <img src='/images/music/ofg-front-cover.jpeg' alt='album cover front' />
+        <img src='/images/music/ofg-back-cover.jpeg' alt='album cover back' />
       </Covers>
+      <Tree src='/images/art/tree.jpeg' alt='tree logo' />
     </StyledSection>
   )
 }
