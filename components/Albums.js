@@ -64,7 +64,7 @@ const Italic = styled.p`
   font-style: italic;
 `
 
-const Album = ({ id, title, src, alt, p1, p2, p3 }) => {
+const Album = ({ id, title, src, alt, p1, p2, p3, p4 }) => {
   return (
     <>
       <Flex id={id}>
@@ -76,6 +76,7 @@ const Album = ({ id, title, src, alt, p1, p2, p3 }) => {
           <p>{p1}</p>
           {id === 'breaking-through' ? <Italic>{p2}</Italic> : <p>{p2}</p>}
           {p3 ? <p>{p3}</p> : null}
+          {id === 'the-once-and-future-garden' ? <p>{p4}</p> : null}
           <Logos type={id} />
         </TextBox>
       </Flex>

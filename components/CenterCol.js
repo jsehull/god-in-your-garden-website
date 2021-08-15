@@ -16,7 +16,7 @@ const Center = styled.section`
   }
 
   a {
-    color: ${theme.colors.orangeLetters};
+    color: ${theme.colors.orangeLight};
     font-weight: bold;
     text-decoration: underline;
   }

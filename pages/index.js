@@ -55,8 +55,8 @@ const index = () => {
         bg='#243354'
         color='#fff'
         title='Solo piano albums'
-        src='/images/music/multi-cd.png'
-        width='300px'
+        src='/images/music/multi-cd-3.png'
+        width='500px'
         alt="Scott's solo piano albums"
         p='Scott has beautifully recorded inspirational, easy-listening solo piano albums that you may enjoy as companions with God in Your Garden. Visit '
         href='/music'

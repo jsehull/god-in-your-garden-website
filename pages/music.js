@@ -15,8 +15,10 @@ const music = () => {
           title='The Once and Future Garden'
           src='/images/music/ofg-front-cover.jpeg'
           alt='album cover'
-          p1='Inspiration for these songs came from the Creation Story in the first three chapters of Genesis.'
-          p2='In grateful memory of Linda Sue. I love you, Mom!'
+          p1='Scott recorded these 12 original solo piano songs to artistically explore and develop some of the major themes in his book, God In Your Garden. And each of the song titles comes from a phrase or idea out of the Creation Story found in the first three chapters of Genesis. For example:'
+          p2='Fingerprint of God - “God created humankind in His Own image” (Gen. 1:27)'
+          p3='Make It Better - “God placed them in the garden to care for it” (Gen. 2:15)'
+          p4='Where Are You - “God called to them and said, ‘Where are you?’” (Gen. 3:9)'
         />
         <Album
           id='breaking-through'
